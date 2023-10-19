@@ -2,7 +2,7 @@
 #include <stdexcept>
 #include <string>
 #include <sstream>
-#include "../include/Email.h"
+#include "../../include/dominios_h/Email.h"
 
 using namespace std;
 
@@ -18,11 +18,17 @@ Email::~Email()
 
 void Email::setEmail(const string& email)
 {
-  if(!isValid(email))
-  {
-    throw invalid_argument("Invalid email address");
+  try{
+    if(!isValid(email))
+    {
+      throw invalid_argument("Endereço de email inválido");
+    }
+    this->email.str(email);
   }
-  this->email.str(email);
+  catch(invalid_argument& e)
+  {
+    throw e;
+  }
 }
 
 const stringstream& Email::getEmail() const 

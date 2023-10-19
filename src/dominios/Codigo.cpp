@@ -1,4 +1,4 @@
-#include "../include/Codigo.h"
+#include "../../include/dominios_h/Codigo.h"
 #include <iostream>
 
 using namespace std;
@@ -11,20 +11,6 @@ Codigo::Codigo()
 Codigo::~Codigo()
 {
   //dtor
-}
-
-void Codigo::setCodigo(const string& codigo)
-{
-  if(!isValid(codigo))
-  {
-    throw invalid_argument("Invalid code");
-  }
-  this->codigo = codigo;
-}
-
-const string& Codigo::getCodigo() const
-{
-  return codigo;
 }
 
 bool Codigo::isValid(const string& codigo)
@@ -42,5 +28,19 @@ bool Codigo::isValid(const string& codigo)
     return false;
   }
   return true;
+}
+
+void Codigo::setCodigo(const string& codigo)
+{
+  if(!isValid(codigo))
+  {
+    throw invalid_argument("Código inválido");
+  }
+  this->codigo = codigo;
+}
+
+const string& Codigo::getCodigo() const
+{
+  return codigo;
 }
 
