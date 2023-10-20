@@ -3,16 +3,6 @@
 
 using namespace std;
 
-Codigo::Codigo()
-{
-  //ctor
-}
-
-Codigo::~Codigo()
-{
-  //dtor
-}
-
 bool Codigo::isValid(const string& codigo)
 {
   if(codigo.length() != 4)

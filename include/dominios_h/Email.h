@@ -8,15 +8,15 @@ using namespace std;
 
 class Email
 {
-    public:
-        Email();
-        void setEmail(const string& email);
-        const stringstream& getEmail() const;
-        virtual ~Email();
+  public:
+    Email();
+    void setEmail(const string& email);
+    const stringstream& getEmail() const;
+    virtual ~Email();
 
-    private:
-        stringstream email;
-        bool isValid(const string& email);
+  private:
+    stringstream email;
+    bool isValid(const string& email);
 };
 
 #endif // EMAIL_H

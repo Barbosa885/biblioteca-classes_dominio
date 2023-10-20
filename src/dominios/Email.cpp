@@ -6,16 +6,6 @@
 
 using namespace std;
 
-Email::Email()
-{
-    //ctor
-}
-
-Email::~Email()
-{
-    //dtor
-}
-
 void Email::setEmail(const string& email)
 {
   try{
@@ -31,7 +21,7 @@ void Email::setEmail(const string& email)
   }
 }
 
-const stringstream& Email::getEmail() const 
+const stringstream& Email::getEmail() const
 {
   return email;
 }
