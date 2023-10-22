@@ -1,3 +1,11 @@
+#ifndef COLUNA_H
+#define COLUNA_H
+
+#include <string>
+#include <stdexcept>
+
+using namespace std;
+
 class COLUNA{
     private:
         string coluna;
