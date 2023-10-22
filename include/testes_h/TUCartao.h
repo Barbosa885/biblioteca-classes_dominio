@@ -1,5 +1,5 @@
-#ifndef TESTES_H_INCLUDED
-#define TESTES_H_INCLUDED
+#ifndef TESTES_CARTAO_H
+#define TESTES_CARTAO_H
 
 using namespace std;
 
@@ -20,4 +20,4 @@ public:
     int run();                              
 };
 
-#endif // TESTES_H_INCLUDED
+#endif // TESTES_CARTAO_H
