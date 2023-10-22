@@ -1,4 +1,10 @@
-/** @brief Configura o ambiente de teste. */
+/**
+ * @file TULimite.cpp
+ *
+ * Autor: Hideki Tomiyama (190014351)
+ *
+ * @brief Configura o ambiente de teste.
+ */
 void TULIMITE::SetUp(){  
     limite = new LIMITE();
     estado = SUCESSO;
