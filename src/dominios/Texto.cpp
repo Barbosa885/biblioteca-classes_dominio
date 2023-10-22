@@ -1,3 +1,7 @@
+#include "../../include/dominios_h/Textos.h"
+#include <string>
+#include <iostream>
+
 void TEXTO::isValid(string texto) {
 /** 
  * @brief
