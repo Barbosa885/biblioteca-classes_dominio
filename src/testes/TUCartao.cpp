@@ -38,9 +38,8 @@ void TUCartao::testarCenarioSucesso(){
         estado = FALHA;
 }
 
-int TUCartao::run(){
+void TUCartao::run(){
     setUp();
     testarCenarioSucesso();
     tearDown();
-    return estado;
 }
