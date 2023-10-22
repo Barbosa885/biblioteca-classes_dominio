@@ -20,9 +20,9 @@ void TUCartao::testarCenarioSucesso(){
         estado = FALHA;
 
     TEXTO nome;
-    nome.setTexto(TEXTO_VALIDO);
+    nome.setTexto(NOME_VALIDO);
     cartao->setNome(nome);
-    if(cartao->getNome().getTexto() != TEXTO_VALIDO)
+    if(cartao->getNome().getTexto() != NOME_VALIDO)
         estado = FALHA;
 
     TEXTO descricao;
@@ -32,9 +32,9 @@ void TUCartao::testarCenarioSucesso(){
         estado = FALHA;
 
     COLUNA coluna;
-    coluna.SetColuna(COLUNA_VALIDA);
-    cartao->SetColuna(coluna);
-    if(cartao->GetColuna().GetColuna() != COLUNA_VALIDA)
+    coluna.setColuna(COLUNA_VALIDA);
+    cartao->setColuna(coluna);
+    if(cartao->getColuna().getColuna() != COLUNA_VALIDA)
         estado = FALHA;
 }
 
