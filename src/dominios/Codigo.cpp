@@ -5,12 +5,12 @@ using namespace std;
 
 Codigo::Codigo()
 {
-  //ctor
+  //construtor
 }
 
 Codigo::~Codigo()
 {
-  //dtor
+  //destrutor
 }
 
 void Codigo::isValid(const string& codigo)
