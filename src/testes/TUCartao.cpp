@@ -14,15 +14,27 @@ void TUCartao::tearDown(){
 
 void TUCartao::testarCenarioSucesso(){
     Codigo codigo;
-    codigo.setValor(VALOR_VALIDO);
+    codigo.setValor(CODIGO_VALIDO);
     cartao->setCodigo(codigo);
-    if(cartao->getCodigo().getValor() != VALOR_VALIDO)
+    if(cartao->getCodigo().getCodigo() != CODIGO_VALIDO)
         estado = FALHA;
 
-    Prioridade prioridade;
-    prioridade.setValor(VALOR_VALIDO);
-    cartao->setPrioridade(prioridade);
-    if(cartao->getPrioridade().getValor() != VALOR_VALIDO)
+    TEXTO nome;
+    nome.setTexto(TEXTO_VALIDO);
+    cartao->setNome(nome);
+    if(cartao->getNome().getTexto() != TEXTO_VALIDO)
+        estado = FALHA;
+
+    TEXTO descricao;
+    descricao.setTexto(DESCRICAO_VALIDA);
+    cartao->setDescricao(descricao);
+    if(cartao->getDescricao().getTexto() != DESCRICAO_VALIDA)
+        estado = FALHA;
+
+    COLUNA coluna;
+    coluna.SetColuna(COLUNA_VALIDA);
+    cartao->SetColuna(coluna);
+    if(cartao->GetColuna().GetColuna() != COLUNA_VALIDA)
         estado = FALHA;
 }
 
