@@ -6,34 +6,31 @@
 
 using namespace std;
 
+Email::Email()
+{
+
+}
+
+Email::~Email()
+{
+
+}
+
 void Email::setEmail(const string& email)
 {
-  try{
-    if(!isValid(email))
-    {
-      throw invalid_argument("Endereço de email inválido");
-    }
-    this->email.str(email);
-  }
-  catch(invalid_argument& e)
-  {
-    throw e;
-  }
+  isValid(email);
+  this->email.str(email);
 }
 
-const stringstream& Email::getEmail() const
-{
-  return email;
-}
 
-bool Email::isValid(const string& email)
+void Email::isValid(const string& email)
 {
-  const regex pattern("(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+");
+  const regex pattern("^([a-zA-Z0-9]{2,10})([.])?([a-zA-Z0-9]{1,})@([a-zA-Z0-9]{2,20})([.][a-zA-Z0-9]{2,20})+$");
   istringstream ss(email);
 
   sregex_token_iterator it(email.begin(), email.end(), pattern, 0);
   sregex_token_iterator end;
-  return regex_match(email, pattern);
+  regex_match(email, pattern);
 
   while (it != end)
   {
@@ -42,8 +39,7 @@ bool Email::isValid(const string& email)
     {
       it++;
     } else {
-      return false;
+      throw invalid_argument("Endereço de email inválido");
     }
   }
-
 }

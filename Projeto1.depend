@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1697977453 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
+	<iostream>
+	"./include/dominios_h/Email.h"
+	"./include/dominios_h/Codigo.h"
+	"./include/testes_h/TUEmail.h"
+	"./include/testes_h/TUCodigo.h"
+
+1697975200 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Email.h
+	<string>
+	<sstream>
+
+1697978451 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUEmail.h
+	"../dominios_h/Email.h"
+	"../Entidades.h"
+
+1697720647 /home/barbosa/unb/TP1-2023.2/Projeto1/include/Entidades.h
+	"dominios_h/Email.h"
+	"dominios_h/Codigo.h"
+
+1697975182 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Codigo.h
+	<string>
+
+1697914293 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Codigo.cpp
+	"../../include/dominios_h/Codigo.h"
+	<iostream>
+
+1697909762 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Email.cpp
+	<regex>
+	<stdexcept>
+	<string>
+	<sstream>
+	"../../include/dominios_h/Email.h"
+
+1697978374 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUEmail.cpp
+	"../../include/testes_h/TUEmail.h"
+	"../../include/dominios_h/Email.h"
+	<iostream>
+
+1697978471 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUCodigo.h
+	"../dominios_h/Codigo.h"
+	"../Entidades.h"
+
+1697974631 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCodigo.cpp
+	"../../include/testes_h/TUCodigo.h"
+	"../../include/dominios_h/Codigo.h"
+

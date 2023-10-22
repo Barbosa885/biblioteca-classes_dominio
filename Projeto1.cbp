@@ -34,9 +34,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/Email.h" />
+		<Unit filename="include/dominios_h/Codigo.h" />
+		<Unit filename="include/dominios_h/Email.h" />
+		<Unit filename="include/testes_h/TUCodigo.h" />
+		<Unit filename="include/testes_h/TUEmail.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Email.cpp" />
+		<Unit filename="src/dominios/Codigo.cpp" />
+		<Unit filename="src/dominios/Email.cpp" />
+		<Unit filename="src/testes/TUCodigo.cpp" />
+		<Unit filename="src/testes/TUEmail.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

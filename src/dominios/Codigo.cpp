@@ -3,34 +3,35 @@
 
 using namespace std;
 
-bool Codigo::isValid(const string& codigo)
+Codigo::Codigo()
+{
+  //ctor
+}
+
+Codigo::~Codigo()
+{
+  //dtor
+}
+
+void Codigo::isValid(const string& codigo)
 {
   if(codigo.length() != 4)
   {
-    return false;
+    throw invalid_argument("Código inválido");
   }
   if(!isupper(codigo[0]) || !isupper(codigo[1]))
   {
-    return false;
+    throw invalid_argument("Código inválido");
   }
   if(!isdigit(codigo[2]) || !isdigit(codigo[3]))
   {
-    return false;
+    throw invalid_argument("Código inválido");
   }
-  return true;
 }
 
 void Codigo::setCodigo(const string& codigo)
 {
-  if(!isValid(codigo))
-  {
-    throw invalid_argument("Código inválido");
-  }
+  isValid(codigo);
   this->codigo = codigo;
-}
-
-const string& Codigo::getCodigo() const
-{
-  return codigo;
 }
 
