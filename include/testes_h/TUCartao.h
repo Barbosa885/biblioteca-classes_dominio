@@ -10,7 +10,8 @@ using namespace std;
 
 class TUCartao {
 private:
-    const static string CODIGOS_VALIDOS[];   // Definição de constante para evitar número mágico.
+    const static string CODIGOS_VALIDOS[];   
+    const static string CODIGOS_INVALIDOS[];
     Projeto *projeto;                       // Referência para unidade em teste.
     int estado;                             // Estado do teste.
     void setUp();                           // Método para criar unidade em teste.
