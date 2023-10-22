@@ -5,10 +5,14 @@
  *
  * Autor: Gabriel Kenzo Nomura (211037176)
  */
+#ifndef TESTE_SENHA_H
+#define TESTE_SENHA_H
 
 #include <iostream>
 #include <string>
 #include "../dominios_h/Senha.h"
+
+using namespace std;
 
 class TUSenha {
 private:
