@@ -1,11 +1,13 @@
 void TEXTO::isValid(string texto) {
 /** 
 * verifica se o texto atende a alguns critérios específicos:
-* - A primeira letra deve ser maiúscula;
 * - O texto deve ter no mínimo 5 e no máximo 30 caracteres;
-* - Os caracteres permitidos são letras (maiúsculas e minúsculas), pontuações ('.', ',', ';', '!', '?') e espaços em branco;
-* - Não deve conter caracteres com acentuação;
-* - Não deve conter sequências de pontuação ou espaços em branco consecutivos;
+* - Cada caractere é letra(A - Z, a - z), dígito (0-9), sinal de pontuação(.,;?!);
+* - Não há espaços em branco em sequência;
+* - Não há sinais de pontuação em sequência;
+* - Não há acentuação
+* - Primeiro caractere é letra maiúscula;
+* - Primeiro caractere após sinal de pontuação (exceto vírgula ou ponto-e-vírgula) é letra maiúscula;
 * @param o texto verificado
 * saida: "argumento invalido" caso o texto não atenda um dos critérios estabelecidos.
 */
