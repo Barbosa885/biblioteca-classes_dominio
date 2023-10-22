@@ -1,8 +1,5 @@
 /**
- * @file Coluna.h
- * @brief Definição da classe Coluna.
- *
- * @brief Uma classe que representa uma coluna de dados.
+ * @file TUColuna.cpp
  *
  * Autor: Hideki Tomiyama (190014351)
  *
