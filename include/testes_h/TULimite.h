@@ -1,6 +1,8 @@
 /**
  * @file TULimite.h
  *
+ ** @brief Definição da classe de teste TULimite.
+ *
  * Autor: Hideki Tomiyama (190014351)
  */
 
