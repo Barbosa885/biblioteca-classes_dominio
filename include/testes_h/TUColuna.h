@@ -11,7 +11,6 @@
 #include "../dominios_h/Coluna.h"
 #include "../Entidades.h"
 
-
 class TUColuna {
 private:
     const static string COLUNAS_VALIDAS[]; /**< Constante que representa uma coluna valida para o teste. */
