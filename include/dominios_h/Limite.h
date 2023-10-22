@@ -1,3 +1,11 @@
+#ifndef LIMITE_H
+#define LIMITE_H
+
+#include <string>
+#include <stdexcept>
+
+using namespace std;
+
 class LIMITE{
     private:
         int limite;
