@@ -1,4 +1,11 @@
 /**
+ * @file Coluna.h
+ * @brief Definição da classe Coluna.
+ *
+ * @brief Uma classe que representa uma coluna de dados.
+ *
+ * Autor: Hideki Tomiyama (190014351)
+ *
  * @brief Configura o ambiente de teste.
  * 
  * Esta função é responsável por configurar o ambiente de teste. 
