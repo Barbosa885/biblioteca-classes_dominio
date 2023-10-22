@@ -14,7 +14,7 @@ void TUCartao::tearDown(){
 
 void TUCartao::testarCenarioSucesso(){
     Codigo codigo;
-    codigo.setValor(CODIGO_VALIDO);
+    codigo.setCodigo(CODIGO_VALIDO);
     cartao->setCodigo(codigo);
     if(cartao->getCodigo().getCodigo() != CODIGO_VALIDO)
         estado = FALHA;
