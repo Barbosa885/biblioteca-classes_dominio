@@ -1,5 +1,5 @@
 /**
- * @file Texto.h
+ * @file Quadro.h
  * @brief Definição da classe Quadro.
  *
  * Autor: Gabriel Kenzo Nomura (211037176)
