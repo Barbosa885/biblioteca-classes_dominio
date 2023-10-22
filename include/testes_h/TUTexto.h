@@ -1,3 +1,11 @@
+/**
+ * @file TUTexto.h
+ *
+ * @brief Definição da classe de teste TUTexto.
+ *
+ * Autor: Gabriel Kenzo Nomura ()
+ */
+
 class TUTEXTO {
 private:
     const string TEXTO_VALIDO = "Testei um caso.Ponto conta?"; /**< Constante que representa um texto valido para o teste. */
