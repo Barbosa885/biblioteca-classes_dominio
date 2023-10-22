@@ -41,3 +41,12 @@ class TEXTO{
          */
         void SetTexto(string);
 };
+
+inline void TEXTO::SetTexto(string texto){
+    verifica(texto);
+    this -> texto = texto;
+}
+
+inline string TEXTO::GetTexto(){
+    return texto;
+}
