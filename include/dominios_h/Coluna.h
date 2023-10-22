@@ -2,6 +2,8 @@
  * @file Coluna.h
  * @brief Definição da classe Coluna.
  *
+ * Uma classe que representa uma coluna de dados.
+ *
  * Autor: Hideki Tomiyama (190014351)
  */
 
@@ -13,10 +15,6 @@
 
 using namespace std;
 
-/**
- * @class COLUNA
- * Uma classe que representa uma coluna de dados.
- */
 class COLUNA{
     private:
         string coluna;
