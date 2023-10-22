@@ -42,25 +42,28 @@ void TUTexto::tearDown(){ /** Limpa o ambiente de teste, excluindo a instância 
 }
 
 void TUTexto::testarCenarioSucesso(){ /** Testa um cenário de sucesso em que o texto é definido como um texto válido. */
-    for ()
-    try{
-        texto->setTexto(TEXTO_VALIDO);
-        if (texto->getTexto() != TEXTO_VALIDO)
+    for (const string &textoValido : TEXTOS_VALIDOS){
+        try{
+            texto->setTexto(textoValido);
+            if (texto->getTexto() != textoValido)
+                estado = FALHA;
+        }
+        catch(invalid_argument &excecao){
             estado = FALHA;
-    }
-    catch(invalid_argument &excecao){
-        estado = FALHA;
+        }
     }
 }
 
 void TUTexto::testarCenarioFalha(){ /** Testa um cenário de falha em que o texto é definido como um texto inválido. */
-    try{
-        texto->setTexto(TEXTO_INVALIDO);
-        estado = FALHA;
-    }
-    catch(invalid_argument &excecao){
-        if (texto->getTexto() == TEXTO_INVALIDO)
+    for (const string &textoInvalido : TEXTOS_INVALIDOS){
+        try{
+            texto->setTexto(textoInvalido);
             estado = FALHA;
+        }
+        catch(invalid_argument &excecao){
+            if (texto->getTexto() == textoInvalido)
+                estado = FALHA;
+        }
     }
 }
 
