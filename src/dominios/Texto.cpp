@@ -1,5 +1,6 @@
 void TEXTO::isValid(string texto) {
 /** 
+ * @brief
 * verifica se o texto atende a alguns critérios específicos:
 * - O texto deve ter no mínimo 5 e no máximo 30 caracteres;
 * - Cada caractere é letra(A - Z, a - z), dígito (0-9), sinal de pontuação(.,;?!);
