@@ -8,6 +8,7 @@
 #include "./include/dominios_h/Limite.h"
 #include "./include/dominios_h/Senha.h"
 #include "./include/dominios_h/Texto.h"
+#include "./include/entidades_h/Cartao.h"
 
 // Header testes
 #include "./include/testes_h/TULimite.h"
@@ -16,6 +17,8 @@
 #include "./include/testes_h/TUEmail.h"
 #include "./include/testes_h/TUSenha.h"
 #include "./include/testes_h/TUTexto.h"
+#include "./include/testes_h/TUCartao.h"
+
 
 using namespace std;
 
@@ -38,5 +41,8 @@ int main()
   
   TUTexto *testeTexto = new TUTexto();
   testeTexto->run();
+
+  TUCartao *testeCartao = new TUCartao();
+  testeCartao->run();
 
 }
