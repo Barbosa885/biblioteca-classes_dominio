@@ -27,3 +27,12 @@ class LIMITE{
         * define o limite.
         */
 };
+
+inline void LIMITE::SetLimite(int limite){
+    verifica(limite);
+    this -> limite = limite;
+}
+
+inline int LIMITE::GetLimite(){
+    return limite;
+}
