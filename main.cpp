@@ -9,6 +9,7 @@
 #include "./include/dominios_h/Senha.h"
 #include "./include/dominios_h/Texto.h"
 #include "./include/entidades_h/Cartao.h"
+#include "./include/entidades_h/Quadro.h"
 
 // Header testes
 #include "./include/testes_h/TULimite.h"
@@ -18,7 +19,7 @@
 #include "./include/testes_h/TUSenha.h"
 #include "./include/testes_h/TUTexto.h"
 #include "./include/testes_h/TUCartao.h"
-
+#include "./include/testes_h/TUQuadro.h"
 
 using namespace std;
 
@@ -45,4 +46,6 @@ int main()
   TUCartao *testeCartao = new TUCartao();
   testeCartao->run();
 
+  TUQuadro *testeQuadro = new TUQuadro();
+  testeQuadro->run();
 }
