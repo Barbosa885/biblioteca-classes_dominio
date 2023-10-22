@@ -14,31 +14,31 @@ void TUQuadro::tearDown(){
 
 void TUQuadro::testarCenarioSucesso(){
     Codigo codigo;
-    codigo.setValor(CODIGO_VALIDO);
-    cartao->setCodigo(codigo);
-    if(cartao->getCodigo().getCodigo() != CODIGO_VALIDO)
+    codigo.setCodigo(CODIGO_VALIDO);
+    quadro->setCodigo(codigo);
+    if(quadro->getCodigo().getCodigo() != CODIGO_VALIDO)
         estado = FALHA;
 
     Texto nome;
     nome.setTexto(NOME_VALIDO);
-    cartao->setNome(nome);
-    if(cartao->getNome().getTexto() != NOME_VALIDO)
+    quadro->setNome(nome);
+    if(quadro->getNome().getTexto() != NOME_VALIDO)
         estado = FALHA;
 
     Texto descricao;
     descricao.setTexto(DESCRICAO_VALIDA);
-    cartao->setDescricao(descricao);
-    if(cartao->getDescricao().getTexto() != DESCRICAO_VALIDA)
+    quadro->setDescricao(descricao);
+    if(quadro->getDescricao().getTexto() != DESCRICAO_VALIDA)
         estado = FALHA;
 
-    Coluna coluna;
-    coluna.setColuna(COLUNA_VALIDA);
-    cartao->setColuna(coluna);
-    if(cartao->getColuna().getColuna() != COLUNA_VALIDA)
+    Limite limite;
+    limite.setLimite(LIMITE_VALIDO);
+    quadro->setLimite(limite);
+    if(quadro->getLimite().getLimite() != LIMITE_VALIDO)
         estado = FALHA;
 }
 
-void TUCartao::run(){
+void TUQuadro::run(){
     setUp();
     testarCenarioSucesso();
     tearDown();
