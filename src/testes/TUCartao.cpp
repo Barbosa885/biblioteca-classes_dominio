@@ -19,19 +19,19 @@ void TUCartao::testarCenarioSucesso(){
     if(cartao->getCodigo().getCodigo() != CODIGO_VALIDO)
         estado = FALHA;
 
-    TEXTO nome;
+    Texto nome;
     nome.setTexto(NOME_VALIDO);
     cartao->setNome(nome);
     if(cartao->getNome().getTexto() != NOME_VALIDO)
         estado = FALHA;
 
-    TEXTO descricao;
+    Texto descricao;
     descricao.setTexto(DESCRICAO_VALIDA);
     cartao->setDescricao(descricao);
     if(cartao->getDescricao().getTexto() != DESCRICAO_VALIDA)
         estado = FALHA;
 
-    COLUNA coluna;
+    Coluna coluna;
     coluna.setColuna(COLUNA_VALIDA);
     cartao->setColuna(coluna);
     if(cartao->getColuna().getColuna() != COLUNA_VALIDA)
