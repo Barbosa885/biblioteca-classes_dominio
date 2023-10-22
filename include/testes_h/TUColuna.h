@@ -6,9 +6,12 @@
  * Autor: Hideki Tomiyama (190014351)
  */
 
+ifndef TESTE_COLUNA_H
 #include <iostream>
 #include <string>
 #include "../dominios_h/Coluna.h"
+
+using namespace std;
 
 class TUColuna {
 private:
