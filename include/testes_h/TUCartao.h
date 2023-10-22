@@ -1,6 +1,12 @@
 #ifndef TESTES_CARTAO_H
 #define TESTES_CARTAO_H
 
+#include "../dominios_h/Codigo.h"
+#include "../dominios_h/Texto.h"
+#include "../dominios_h/Coluna.h"
+#include "../entidades_h/Cartao.h"
+#include <string>
+
 using namespace std;
 
 class TUCartao {
