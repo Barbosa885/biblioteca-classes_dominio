@@ -1,9 +1,3 @@
-#include "../../include/testes_h/TULimite.h"
-#include "../../include/dominios_h/Limite.h"
-#include <iostream>
-
-using namespace std;
-
 /**
  * @file TULimite.cpp
  *
@@ -12,52 +6,106 @@ using namespace std;
  * @brief Configura o ambiente de teste.
  */
 
-void TULIMITE::SetUp(){  
-    limite = new LIMITE();
-    estado = SUCESSO;
+#include <iostream>
+#include "../../include/testes_h/TULimite.h"
+#include "../../include/dominios_h/Limite.h"
+
+using namespace std;
+
+TULimite::TULimite()
+{
+  // ctor
+}
+
+TULimite::~TULimite()
+{
+  // dtor
+}
+
+const int TULimite::LIMITES_VALIDOS[] = {
+  5,
+  10,
+  15,
+  20
+};
+
+const int TULimite::LIMITES_INVALIDOS[] = {
+  1,
+  3,
+  4,
+  30
+};
+
+void TULimite::setUp()
+{
+  limite = new Limite();
+  estado = SUCESSO;
 }
 
 /** @brief Limpa o ambiente de teste, excluindo a instância LIMITE. */
-void TULIMITE::TearDown(){ 
-    delete limite;
+void TULimite::tearDown()
+{
+  delete limite;
 }
 
 /** @brief Testa um cenário de sucesso em que o limite é definido como um limite válido. */
-void TULIMITE::TestarCenarioSucesso(){ 
+void TULimite::testarCenarioSucesso()
+{
+  cout << "LIMITE" << endl;
+  cout << "Teste de sucesso do limite" << endl;
+  for(const int limiteValido : LIMITES_VALIDOS)
+  {
+    cout << "Testando limite: " << limiteValido << endl;
     try{
-        limite->SetLimite(LIMITE_VALIDO);
-        if (limite->GetLimite() != LIMITE_VALIDO)
-            estado = FALHA;
-    }
-    catch(invalid_argument &excecao){
+      limite->setLimite(limiteValido);
+      if(limite->getLimite() != limiteValido)
+      {
         estado = FALHA;
+      } else {
+        cout << "Sucesso: " << limite->getLimite() << endl;
+        estado = SUCESSO;
+      }
+
     }
+    catch(invalid_argument& e)
+    {
+      cout << "Exceção lançada: " << e.what() << endl;
+      estado = FALHA;
+    }
+  }
 }
 
 /** @brief Testa um cenário de falha em que o limite é definido como um limite inválido. */
-void TULIMITE::TestarCenarioFalha(){ 
+void TULimite::testarCenarioFalha()
+{
+  cout << "Testando cenário de falha..." << endl;
+  for(const int limiteInvalido : LIMITES_INVALIDOS)
+  {
+    cout << "Testando limite: " << limiteInvalido << endl;
     try{
-        limite->SetLimite(LIMITE_INVALIDO);
-        estado = FALHA;
+      limite->setLimite(limiteInvalido);
+      estado = FALHA;
     }
-    catch(invalid_argument &excecao){
-        if (limite->GetLimite() == LIMITE_INVALIDO)
-            estado = FALHA;
+    catch(invalid_argument& e)
+    {
+      cout << "Exceção lançada: " << e.what() << endl;
+      estado = FALHA;
     }
+  }
 }
 
 /**
  * @brief Executa os testes.
- * 
- * Esta função é responsável por executar os testes. 
- * Ela chama as funções SetUp, TestarCenarioSucesso, TestarCenarioFalha e TearDown na ordem.
+ *
+ * Esta função é responsável por executar os testes.
+ * Ela chama as funções setUp, testarCenarioSucesso, testarCenarioFalha e tearDown.
  *
  * @return Retorna o estado do teste (SUCESSO ou FALHA).
  */
-int TULIMITE::Run(){
-    SetUp();
-    TestarCenarioSucesso();
-    TestarCenarioFalha();
-    TearDown();
-    return estado; 
+void TULimite::run()
+{
+  setUp();
+  testarCenarioSucesso();
+  testarCenarioFalha();
+  tearDown();
 }

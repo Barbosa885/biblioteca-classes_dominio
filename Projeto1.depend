@@ -1,12 +1,14 @@
 # depslib dependency file v1.0
-1697988885 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
+1697991922 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
 	<iostream>
 	"./include/dominios_h/Email.h"
 	"./include/dominios_h/Codigo.h"
-	"./include/testes_h/TUEmail.h"
-	"./include/testes_h/TUCodigo.h"
 	"./include/dominios_h/Coluna.h"
+	"./include/dominios_h/Limite.h"
+	"./include/testes_h/TULimite.h"
 	"./include/testes_h/TUColuna.h"
+	"./include/testes_h/TUCodigo.h"
+	"./include/testes_h/TUEmail.h"
 
 1697982871 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Email.h
 	<string>
@@ -35,7 +37,7 @@
 	<sstream>
 	"../../include/dominios_h/Email.h"
 
-1697982871 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUEmail.cpp
+1697992821 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUEmail.cpp
 	"../../include/testes_h/TUEmail.h"
 	"../../include/dominios_h/Email.h"
 	<iostream>
@@ -44,7 +46,7 @@
 	"../dominios_h/Codigo.h"
 	"../Entidades.h"
 
-1697982871 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCodigo.cpp
+1697992835 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCodigo.cpp
 	"../../include/testes_h/TUCodigo.h"
 	"../../include/dominios_h/Codigo.h"
 	<iostream>
@@ -53,19 +55,38 @@
 	<string>
 	<stdexcept>
 
-1697989215 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Coluna.cpp
+1697990139 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Coluna.cpp
 	"../../include/dominios_h/Coluna.h"
 	<string>
 	<iostream>
 
-1697989396 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUColuna.cpp
+1697994088 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUColuna.cpp
 	<iostream>
 	"../../include/testes_h/TUColuna.h"
 	"../../include/dominios_h/Coluna.h"
 
-1697989115 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUColuna.h
+1697993668 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUColuna.h
 	<iostream>
 	<string>
 	"../dominios_h/Coluna.h"
 	"../Entidades.h"
+
+1697990098 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Limite.h
+	<string>
+	<stdexcept>
+
+1697994175 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TULimite.h
+	<iostream>
+	"../dominios_h/Limite.h"
+	"../Entidades.h"
+
+1697990158 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Limite.cpp
+	"../../include/dominios_h/Limite.h"
+	<string>
+	<iostream>
+
+1697992868 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TULimite.cpp
+	<iostream>
+	"../../include/testes_h/TULimite.h"
+	"../../include/dominios_h/Limite.h"
 

@@ -10,11 +10,6 @@
 #ifndef LIMITE_H
 #define LIMITE_H
 
-/**
- * @file LIMITE.h
- * @brief Declaração da classe LIMITE.
- */
-
 #include <string>
 #include <stdexcept>
 
@@ -24,26 +19,29 @@ class Limite
 {
 private:
     int limite; /**< Variável que armazena o limite. */
-
+    void isValid(const int &value);
     /**
      * @brief Verifica se um valor é válido como limite.
      * @param value O valor a ser verificado.
      */
-    void isValid(const int &value);
 
 public:
+    Limite(); /**< Construtor padrão da classe. */
+    virtual ~Limite(); /**< Destrutor padrão da classe. */
     /**
      * @brief Obtém o valor do limite.
      * @return O valor do limite.
      */
-    int getLimite();
+    void setLimite(const int &value);
+    const int &getLimite() const;
+
 };
 
 /**
  * @brief Função inline para obter o valor do limite.
  * @return O valor do limite.
  */
-inline int Limite::getLimite() 
+inline const int &Limite::getLimite() const
 {
     return limite;
 }

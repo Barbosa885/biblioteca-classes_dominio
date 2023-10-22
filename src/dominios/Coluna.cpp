@@ -9,7 +9,7 @@ Coluna::Coluna()
 
 Coluna::~Coluna()
 {
-
+  //dtor
 }
 
 void Coluna::isValid(const string &coluna)
@@ -29,4 +29,5 @@ void Coluna::isValid(const string &coluna)
 void Coluna::setColuna(const string &coluna)
 {
   isValid(coluna);
+  this->coluna = coluna;
 }

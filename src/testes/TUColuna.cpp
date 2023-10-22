@@ -25,6 +25,18 @@ TUColuna::~TUColuna()
 
 using namespace std;
 
+const string TUColuna::COLUNAS_VALIDAS[] = {
+  "SOLICITADO",
+  "EM EXECUCAO",
+  "CONCLUIDO"
+};
+
+const string TUColuna::COLUNAS_INVALIDAS[] = {
+  "SOLICITADOOOO",
+  "EM EXECUCAOOOO",
+  "CONCLUIDOOOO"
+};
+
 void TUColuna::setUp()
 {
   coluna = new Coluna();
@@ -50,23 +62,29 @@ void TUColuna::tearDown()
  */
 void TUColuna::testarCenarioSucesso()
 {
+  cout << "COLUNA" << endl;
   cout << "Testando cenário de sucesso" << endl;
-  try{
-    coluna->setColuna(COLUNA_VALIDA);
-    if (coluna->getColuna() != COLUNA_VALIDA)
-    {
-      cout << "Coluna inválida" << endl;
-      estado = FALHA;
+  for(const string& colunaValida : COLUNAS_VALIDAS)
+  {
+    cout << "Testando coluna: " << colunaValida << endl;
+    try{
+      coluna->setColuna(colunaValida);
+      if (coluna->getColuna() != colunaValida)
+      {
+        cout << "Coluna inválida" << endl;
+        estado = FALHA;
+      }
+      else 
+      {
+        cout << "Coluna válida: " << colunaValida << endl;
+        estado = SUCESSO;
+      }
     }
-    else 
-    {
-      cout << "Coluna válida" << endl;
-    }
-  }
-  catch(invalid_argument &excecao){
-    {
-      cout << "Coluna inválida" << endl;
-      estado = FALHA;
+    catch(invalid_argument &excecao){
+      {
+        cout << "Coluna inválida" << endl;
+        estado = FALHA;
+      }
     }
   }
 }
@@ -79,16 +97,19 @@ void TUColuna::testarCenarioSucesso()
  */
 void TUColuna::testarCenarioFalha()
 {
-  cout << "Testando cenário de falha" << endl;
-  try{
-    coluna->setColuna(COLUNA_INVALIDA);
-    estado = FALHA;
-  }
-  catch(invalid_argument &e){
-    if (coluna->getColuna() == COLUNA_INVALIDA)
-    {
+  cout << "Testando cenário de falha..." << endl;
+  for(const string& colunaInvalida : COLUNAS_INVALIDAS)
+  {
+    cout << "Testando coluna: " << colunaInvalida << endl;
+    try{
+      coluna->setColuna(colunaInvalida);
       estado = FALHA;
-      cout << "Coluna inválida" << endl;
+    }
+    catch(invalid_argument &e){
+      {
+        cout << "Exceção lançada: " << e.what() << endl;
+        estado = FALHA;
+      }
     }
   }
 }

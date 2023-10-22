@@ -14,8 +14,8 @@
 
 class TUColuna {
 private:
-    const string COLUNA_VALIDA = "CONCLUIDO"; /**< Constante que representa uma coluna valida para o teste. */
-    const string COLUNA_INVALIDA = "Conclui"; /**< Constante que representa uma coluna invalida para o teste. */
+    const static string COLUNAS_VALIDAS[]; /**< Constante que representa uma coluna valida para o teste. */
+    const static string COLUNAS_INVALIDAS[]; /**< Constante que representa uma coluna invalida para o teste. */
     Coluna *coluna;
     int estado; /**< Variável que armazena o estado do teste. */
     /**

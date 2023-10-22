@@ -39,6 +39,7 @@ void TUEmail::tearDown()
 
 void TUEmail::testarCenarioSucesso()
 {
+  cout << "EMAIL" << endl;
   cout << "Testando cenário de sucesso..." << endl;
   for(const string& emailValido : EMAILS_VALIDOS)
   {
@@ -47,11 +48,18 @@ void TUEmail::testarCenarioSucesso()
       email->setEmail(emailValido);
       if(email->getEmail().str() != emailValido)
       {
+        cout << "Falha: " << email->getEmail().str() << endl;
         estado = FALHA;
+      }
+      else
+      {
+        cout << "Sucesso: " << email->getEmail().str() << endl;
+        estado = SUCESSO;
       }
     }
     catch(invalid_argument& e)
     {
+      cout << "Exceção lançada: " << e.what() << endl;
       estado = FALHA;
     }
   }
@@ -64,11 +72,13 @@ void TUEmail::testarCenarioFalha()
   {
     cout << "Testando email: " << emailInvalido << endl;
     try{
+      cout << "Email inválido: " << emailInvalido << endl;
       email->setEmail(emailInvalido);
       estado = FALHA;
     }
     catch(invalid_argument& e)
     {
+      cout << "Exceção lançada: " << e.what() << endl;
       estado = FALHA;
     }
   }

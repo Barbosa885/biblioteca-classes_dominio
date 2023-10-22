@@ -37,6 +37,7 @@ void TUCodigo::tearDown()
 
 void TUCodigo::testarCenarioSucesso()
 {
+  cout << "CODIGO" << endl;
   cout << "Testando cenário de sucesso..." << endl;
   for(const string& codigoValido : CODIGOS_VALIDOS)
   {
@@ -47,7 +48,8 @@ void TUCodigo::testarCenarioSucesso()
       {
         estado = FALHA;
       } else {
-        cout << "Codigo: " << codigo->getCodigo() << endl;
+        cout << "Sucesso: " << codigo->getCodigo() << endl;
+        estado = SUCESSO;
       }
 
     }
