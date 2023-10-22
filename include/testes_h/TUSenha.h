@@ -1,3 +1,11 @@
+/**
+ * @file TUSenha.h
+ *
+ * @brief Definição da classe de teste TUSenha.
+ *
+ * Autor: Gabriel Kenzo Nomura ()
+ */
+
 class TUSENHA {
 private:
     const string SENHA_VALIDA = "T3s!A"; /**< Constante que representa uma senha valida para o teste. */
