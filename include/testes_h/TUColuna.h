@@ -1,6 +1,8 @@
 /**
  * @file TUColuna.h
  *
+ ** @brief Definição da classe de teste TUColuna.
+ *
  * Autor: Hideki Tomiyama (190014351)
  */
 
