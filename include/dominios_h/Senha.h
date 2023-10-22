@@ -6,6 +6,7 @@
  *
  * Autor: Gabriel Kenzo Nomura ()
  */
+
 class SENHA{
     private:
         /** 
