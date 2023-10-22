@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1698007534 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
+1698008020 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
 	<iostream>
 	"./include/dominios_h/Email.h"
 	"./include/dominios_h/Codigo.h"
@@ -50,7 +50,7 @@
 	"../dominios_h/Codigo.h"
 	"../Entidades.h"
 
-1698007420 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCodigo.cpp
+1698008020 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCodigo.cpp
 	"../../include/testes_h/TUCodigo.h"
 	"../../include/dominios_h/Codigo.h"
 	<iostream>
@@ -59,7 +59,7 @@
 	<string>
 	<stdexcept>
 
-1698006666 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Coluna.cpp
+1698008020 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Coluna.cpp
 	"../../include/dominios_h/Coluna.h"
 	<string>
 	<iostream>
@@ -84,7 +84,7 @@
 	"../dominios_h/Limite.h"
 	"../Entidades.h"
 
-1698006666 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Limite.cpp
+1698008020 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Limite.cpp
 	"../../include/dominios_h/Limite.h"
 	<string>
 	<iostream>
@@ -115,22 +115,22 @@
 	<string>
 	"../../include/dominios_h/Senha.h"
 
-1698007017 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Texto.cpp
+1698008020 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Texto.cpp
 	"../../include/dominios_h/Texto.h"
 	<string>
 	<iostream>
 	<regex>
 
-1698006969 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Texto.h
+1698008020 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Texto.h
 	<iostream>
 	<string>
 
-1698007437 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUTexto.cpp
+1698008020 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUTexto.cpp
 	<iostream>
 	"../../include/testes_h/TUTexto.h"
 	"../../include/dominios_h/Texto.h"
 
-1698007101 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUTexto.h
+1698008020 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUTexto.h
 	<iostream>
 	<string>
 	"../dominios_h/Texto.h"
