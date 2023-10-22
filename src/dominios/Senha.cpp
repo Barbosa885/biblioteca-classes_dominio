@@ -1,4 +1,4 @@
-void SENHA::verifica(string senha){
+void SENHA::isValid(string senha){
 /** 
  * @brief
 * verifica se a senha atende a alguns critérios específicos:
