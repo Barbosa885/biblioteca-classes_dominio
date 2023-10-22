@@ -6,12 +6,15 @@
 #include "./include/dominios_h/Codigo.h"
 #include "./include/dominios_h/Coluna.h"
 #include "./include/dominios_h/Limite.h"
+#include "./include/dominios_h/Senha.h"
 
 // Header testes
 #include "./include/testes_h/TULimite.h"
 #include "./include/testes_h/TUColuna.h"
 #include "./include/testes_h/TUCodigo.h"
 #include "./include/testes_h/TUEmail.h"
+#include "./include/testes_h/TUSenha.h"
+
 
 using namespace std;
 
@@ -29,6 +32,10 @@ int main()
 
   TUColuna *testeColuna = new TUColuna();
   testeColuna->run();
+
+  TUSenha *testeSenha = new TUSenha();
+  testeSenha->run();
+
 
   // TUSenha testeSenha;
   // switch(testeSenha.run())
