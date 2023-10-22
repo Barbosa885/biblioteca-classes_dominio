@@ -9,7 +9,6 @@
 #include <iostream>
 #include <string>
 #include "../dominios_h/Senha.h"
-#include "../Entidades.h"
 
 class TUSenha {
 private:
@@ -23,7 +22,7 @@ private:
     void setUp(); /**< Método para configurar o ambiente de teste. */
     void tearDown();  /**< Método para limpar o ambiente de teste. */
     void testarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */
-    void testarCenarioFalha(); /**< Método para testar o cenário de falha. */   
+    void testarCenarioFalha(); /**< Método para testar o cenário de falha. */
 
 public:
     TUSenha(); /**< Construtor padrão. */

@@ -9,7 +9,6 @@
 #include <iostream>
 #include <string>
 #include "../dominios_h/Coluna.h"
-#include "../Entidades.h"
 
 class TUColuna {
 private:

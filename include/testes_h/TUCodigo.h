@@ -4,14 +4,13 @@
  *
  * Esta classe de teste verifica a validade do domínio Codigo, seguindo critérios de formato definidos.
  *
- * Autor: Gustavo Barbosa (Matrícula 202037589)
+ * Autor: Gustavo Barbosa (202037589)
  */
 
 #ifndef TESTE_CODIGO_H
 #define TESTE_CODIGO_H
 
 #include "../dominios_h/Codigo.h"
-#include "../Entidades.h"
 
 using namespace std;
 

@@ -9,7 +9,6 @@
 #include <iostream>
 #include <string>
 #include "../dominios_h/Texto.h"
-#include "../Entidades.h"
 
 using namespace std;
 

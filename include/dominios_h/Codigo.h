@@ -4,7 +4,7 @@
  *
  * Esta classe representa um código válido, seguindo os critérios de formato definidos.
  *
- * Autor: Gustavo Barbosa (Matrícula 202037589)
+ * Autor: Gustavo Barbosa (202037589)
  */
 
 #ifndef CODIGO_H
