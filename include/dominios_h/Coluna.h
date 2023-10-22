@@ -27,3 +27,12 @@ class COLUNA{
         * define a coluna.
         */
 };
+
+inline void COLUNA::SetColuna(string coluna){
+    verifica(coluna);
+    this -> coluna = coluna;
+}
+
+inline string COLUNA::GetColuna(){
+    return coluna;
+}
