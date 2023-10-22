@@ -22,7 +22,7 @@ class SENHA{
          * Este método privado é usado para verificar a string de senha de acordo com algum critério.
          * @param string A senha a ser verificada.
          */
-        void verifica(string);
+        void isValid(string);
     
     public:
         /** 
