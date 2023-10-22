@@ -4,12 +4,12 @@
 
 Coluna::Coluna()
 {
-  //construtor
+  //ctor
 }
 
 Coluna::~Coluna()
 {
-  //destrutor
+  //dtor
 }
 
 void Coluna::isValid(const string &coluna)
