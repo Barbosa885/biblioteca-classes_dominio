@@ -1,4 +1,4 @@
-void TEXTO::verifica(string texto) {
+void TEXTO::isValid(string texto) {
 /** 
 * verifica se o texto atende a alguns critérios específicos:
 * - A primeira letra deve ser maiúscula;
