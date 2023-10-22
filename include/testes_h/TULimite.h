@@ -5,9 +5,13 @@
  *
  * Autor: Hideki Tomiyama (190014351)
  */
+#ifndef TESTE_LIMITE_H
+#define TESTE_LIMITE_H
 
 #include <iostream>
 #include "../dominios_h/Limite.h"
+
+using namespace std;
 
 class TULimite {
 private:
