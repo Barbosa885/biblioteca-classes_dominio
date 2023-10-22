@@ -6,23 +6,32 @@
  * Autor: Gabriel Kenzo Nomura ()
  */
 
-class TUTEXTO {
+#include <iostream>
+#include <string>
+#include "../dominios_h/Coluna.h"
+#include "../Entidades_h"
+
+using namespace std;
+
+class TUTexto {
 private:
-    const string TEXTO_VALIDO = "Testei um caso.Ponto conta?"; /**< Constante que representa um texto valido para o teste. */
-    const string TEXTO_INVALIDO = "Pontuacao invalida.teste";  /**< Constante que representa um texto invalido para o teste. */
-    TEXTO *texto;
+    const static string TEXTOS_VALIDOS[]; /**< Constante que representa um texto valido para o teste. */
+    const static string TEXTOS_INVALIDOS[];  /**< Constante que representa um texto invalido para o teste. */
+    Texto *texto;
     int estado; /**< Variável que armazena o estado do teste. */
     /**
     * Métodos privados
     */
-    void SetUp(); /**< Método para configurar o ambiente de teste. */
-    void TearDown();  /**< Método para limpar o ambiente de teste. */
-    void TestarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */
-    void TestarCenarioFalha(); /**< Método para testar o cenário de falha. */    
+    void setUp(); /**< Método para configurar o ambiente de teste. */
+    void tearDown();  /**< Método para limpar o ambiente de teste. */
+    void testarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */
+    void testarCenarioFalha(); /**< Método para testar o cenário de falha. */    
 
 public:
+    TUTexto();          /**< Construtor padrão. */
+    virtual ~TUTexto(); /**< Destrutor padrão. */
     const static int SUCESSO =  0;  /**< Constante que representa o estado de sucesso do teste. */
     const static int FALHA = -1; /**< Constante que representa o estado de falha do teste. */
     /**< Metodo publico */
-    int Run(); /**< Método para executar os testes de unidade. */
+    void run(); /**< Método para executar os testes de unidade. */
 };
