@@ -15,7 +15,7 @@ class TUSenha {
 private:
     const static string SENHAS_VALIDAS[]; /**< Constante que representa uma senha valida para o teste. */
     const static string SENHAS_INVALIDAS[]; /**< Constante que representa uma senha invalida para o teste. */
-    SENHA *senha;
+    Senha *senha;
     int estado; /**< Variável que armazena o estado do teste. */
     /**
     * Métodos privados
