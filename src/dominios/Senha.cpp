@@ -2,6 +2,8 @@
 #include <regex>
 #include <string>
 
+using namespace std;
+
 Senha::Senha()
 {
 	//ctor
