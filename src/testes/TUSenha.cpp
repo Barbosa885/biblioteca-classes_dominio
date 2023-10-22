@@ -39,8 +39,8 @@ void TUSenha::tearDown(){ /** Limpa o ambiente de teste, excluindo a instância 
 void TUSenha::testarCenarioSucesso(){ /** Testa um cenário de sucesso em que a senha é definida como uma senha válida. */
     for (const string &senhaValida : SENHAS_VALIDAS){
         try{
-            senha->setSenha(SENHA_VALIDA);
-            if (senha->getSenha() != SENHA_VALIDA)
+            senha->setSenha(senhaValida);
+            if (senha->getSenha() != senhaValida)
                 estado = FALHA;
         }
         catch(invalid_argument &excecao){
@@ -49,21 +49,22 @@ void TUSenha::testarCenarioSucesso(){ /** Testa um cenário de sucesso em que a 
     }
 }
 
-void TUSENHA::TestarCenarioFalha(){ /** Testa um cenário de falha em que a senha é definida como uma senha inválida. */
-    try{
-        senha->SetSenha(SENHA_INVALIDA);
-        estado = FALHA;
-    }
-    catch(invalid_argument &excecao){
-        if (senha->GetSenha() == SENHA_INVALIDA)
+void TUSenha::testarCenarioFalha(){ /** Testa um cenário de falha em que a senha é definida como uma senha inválida. */
+    for (const string &senhaInvalida : SENHAS_INVALIDAS){
+        try{
+            senha->setSenha(senhaInvalida);
             estado = FALHA;
+        }
+        catch(invalid_argument &excecao){
+            if (senha->getSenha() == senhaInvalida)
+                estado = FALHA;
+        }
     }
 }
 
-int TUSENHA::Run(){
-    SetUp();
-    TestarCenarioSucesso();
-    TestarCenarioFalha();
-    TearDown();
-    return estado; /**< Retorna o estado final dos testes (SUCESSO ou FALHA). */
+void TUSenha::run(){
+    setUp();
+    testarCenarioSucesso();
+    testarCenarioFalha();
+    tearDown();
 }
