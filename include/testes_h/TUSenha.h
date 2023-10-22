@@ -3,7 +3,7 @@
  *
  * @brief Definição da classe de teste TUSenha.
  *
- * Autor: Gabriel Kenzo Nomura ()
+ * Autor: Gabriel Kenzo Nomura (211037176)
  */
 
 #include <iostream>
@@ -11,7 +11,7 @@
 #include "../dominios_h/Senha.h"
 #include "../Entidades.h"
 
-class TUSENHA {
+class TUSenha {
 private:
     const static string SENHAS_VALIDAS[]; /**< Constante que representa uma senha valida para o teste. */
     const static string SENHAS_INVALIDAS[]; /**< Constante que representa uma senha invalida para o teste. */
