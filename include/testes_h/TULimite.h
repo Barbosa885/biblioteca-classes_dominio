@@ -1,3 +1,9 @@
+/**
+ * @file TULimite.h
+ *
+ * Autor: Hideki Tomiyama (190014351)
+ */
+
 class TULIMITE {
 private:
     const int LIMITE_VALIDO = 10;  /**< Constante que representa um limite valido para o teste. */
