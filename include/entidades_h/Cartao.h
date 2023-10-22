@@ -1,3 +1,10 @@
+/**
+ * @file Cartao.h
+ * @brief Definição da classe Cartao.
+ *
+ * Autor: Hideki Tomiyama (190014351)
+ */
+
 #ifndef CARTAO_H_INCLUDED
 #define CARTAO_H_INCLUDED
 
