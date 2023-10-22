@@ -1,8 +1,6 @@
 /**
  * @file Texto.h
- * @brief Definição da classe Texto.
- *
- * @brief Esta classe é usada para manipular e verificar uma string de texto.
+ * @brief Definição da classe Quadro.
  *
  * Autor: Gabriel Kenzo Nomura (211037176)
  */
