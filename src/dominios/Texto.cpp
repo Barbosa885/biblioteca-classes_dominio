@@ -10,7 +10,7 @@ void TEXTO::isValid(string texto) {
 * - Primeiro caractere é letra maiúscula;
 * - Primeiro caractere após sinal de pontuação (exceto vírgula ou ponto-e-vírgula) é letra maiúscula;
 * @param o texto verificado
-* saida: "argumento invalido" caso o texto não atenda um dos critérios estabelecidos.
+* @throw exception_type: argumento invalido caso o texto não atenda um dos critérios estabelecidos.
 */
     string pontuacao = ".,;!?";
     if (!isupper(texto[0]))
