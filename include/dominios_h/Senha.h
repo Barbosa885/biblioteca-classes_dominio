@@ -33,7 +33,7 @@ class Senha {
          * Este método é usado para obter o valor da variável de senha.
          * @return Retorna a string de senha.
          */
-        const string &getSenha();
+        const string &getSenha() const;
         
         /** 
          * @brief Método SetSenha.
@@ -44,11 +44,9 @@ class Senha {
         void setSenha(const string &senha);
 };
 
-inline void SENHA::SetSenha(string senha){
-    verifica(senha);
-    this -> senha = senha;
-}
-
-inline string SENHA::GetSenha() {
+inline const string &Senha::getSenha() const
+{
     return senha;
 }
+
+#endif // SENHA_H
