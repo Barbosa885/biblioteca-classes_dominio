@@ -1,3 +1,9 @@
+#include "../../include/testes_h/TULimite.h"
+#include "../../include/dominios_h/Limite.h"
+#include <iostream>
+
+using namespace std;
+
 /**
  * @file TULimite.cpp
  *
@@ -5,6 +11,7 @@
  *
  * @brief Configura o ambiente de teste.
  */
+
 void TULIMITE::SetUp(){  
     limite = new LIMITE();
     estado = SUCESSO;
