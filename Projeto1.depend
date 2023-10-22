@@ -1,14 +1,16 @@
 # depslib dependency file v1.0
-1697991922 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
+1698002943 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
 	<iostream>
 	"./include/dominios_h/Email.h"
 	"./include/dominios_h/Codigo.h"
 	"./include/dominios_h/Coluna.h"
 	"./include/dominios_h/Limite.h"
+	"./include/dominios_h/Senha.h"
 	"./include/testes_h/TULimite.h"
 	"./include/testes_h/TUColuna.h"
 	"./include/testes_h/TUCodigo.h"
 	"./include/testes_h/TUEmail.h"
+	"./include/testes_h/TUSenha.h"
 
 1697982871 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Email.h
 	<string>
@@ -46,7 +48,7 @@
 	"../dominios_h/Codigo.h"
 	"../Entidades.h"
 
-1697992835 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCodigo.cpp
+1698004461 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCodigo.cpp
 	"../../include/testes_h/TUCodigo.h"
 	"../../include/dominios_h/Codigo.h"
 	<iostream>
@@ -65,7 +67,7 @@
 	"../../include/testes_h/TUColuna.h"
 	"../../include/dominios_h/Coluna.h"
 
-1697993668 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUColuna.h
+1698002943 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUColuna.h
 	<iostream>
 	<string>
 	"../dominios_h/Coluna.h"
@@ -75,7 +77,7 @@
 	<string>
 	<stdexcept>
 
-1697994175 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TULimite.h
+1698002943 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TULimite.h
 	<iostream>
 	"../dominios_h/Limite.h"
 	"../Entidades.h"
@@ -85,8 +87,29 @@
 	<string>
 	<iostream>
 
-1697992868 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TULimite.cpp
+1697994664 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TULimite.cpp
 	<iostream>
 	"../../include/testes_h/TULimite.h"
 	"../../include/dominios_h/Limite.h"
+
+1698003119 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Senha.h
+	<iostream>
+	<string>
+
+1698003044 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUSenha.h
+	<iostream>
+	<string>
+	"../dominios_h/Senha.h"
+	"../Entidades.h"
+
+1698004765 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUSenha.cpp
+	<iostream>
+	"../../include/testes_h/TUSenha.h"
+	"../../include/dominios_h/Senha.h"
+
+1698003273 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Senha.cpp
+	<iostream>
+	<regex>
+	<string>
+	"../../include/dominios_h/Senha.h"
 
