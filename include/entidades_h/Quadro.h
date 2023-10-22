@@ -8,21 +8,64 @@
 
 using namespace std;
 
+/**
+ * @class Quadro
+ * @brief Classe que representa um Quadro.
+ */
 class Quadro {
     private:
-        Codigo codigo;
-        Texto nome;
-        Texto descricao;
-        Limite limite;
+        Codigo codigo; ///< Código do quadro
+        Texto nome; ///< Nome do quadro
+        Texto descricao; ///< Descrição do quadro
+        Limite limite; ///< Limite do quadro
     
     public:
+        /**
+         * @brief Define o código do quadro.
+         * @param codigo O novo código.
+         */
         void setCodigo(const Codigo&);
+
+        /**
+         * @brief Define o nome do quadro.
+         * @param nome O novo nome.
+         */
         void setNome(const Texto&);
+
+        /**
+         * @brief Define a descrição do quadro.
+         * @param descricao A nova descrição.
+         */
         void setDescricao(const Texto&);
+
+        /**
+         * @brief Define o limite do quadro.
+         * @param limite O novo limite.
+         */
         void setLimite(const Limite&); 
+
+        /**
+         * @brief Obtém o código do quadro.
+         * @return O código atual.
+         */
         Codigo getCodigo() const;    
+
+        /**
+         * @brief Obtém o nome do quadro.
+         * @return O nome atual.
+         */
         Texto getNome() const;         
+
+        /**
+         * @brief Obtém a descrição do quadro.
+         * @return A descrição atual.
+         */
         Texto getDescricao() const;         
+
+        /**
+         * @brief Obtém o limite do quadro.
+         * @return O limite atual.
+         */
         Limite getLimite() const;        
 }; 
 
