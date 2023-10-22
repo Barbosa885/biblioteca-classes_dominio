@@ -75,7 +75,7 @@ void TUCodigo::testarCenarioFalha()
     catch(invalid_argument& e)
     {
       cout << "Exceção lançada: " << e.what() << endl;
-      estado = SUCESSO;
+      estado = FALHA;
     }
   }
 }

@@ -3,13 +3,13 @@
  *
  * @brief Definição da classe de teste TUTexto.
  *
- * Autor: Gabriel Kenzo Nomura ()
+ * Autor: Gabriel Kenzo Nomura (211037176)
  */
 
 #include <iostream>
 #include <string>
-#include "../dominios_h/Coluna.h"
-#include "../Entidades_h"
+#include "../dominios_h/Texto.h"
+#include "../Entidades.h"
 
 using namespace std;
 
@@ -25,7 +25,7 @@ private:
     void setUp(); /**< Método para configurar o ambiente de teste. */
     void tearDown();  /**< Método para limpar o ambiente de teste. */
     void testarCenarioSucesso(); /**< Método para testar o cenário de sucesso. */
-    void testarCenarioFalha(); /**< Método para testar o cenário de falha. */    
+    void testarCenarioFalha(); /**< Método para testar o cenário de falha. */
 
 public:
     TUTexto();          /**< Construtor padrão. */
