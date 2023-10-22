@@ -41,3 +41,12 @@ class SENHA{
          */
         void SetSenha(string);
 };
+
+inline void SENHA::SetSenha(string senha){
+    verifica(senha);
+    this -> senha = senha;
+}
+
+inline string SENHA::GetSenha() {
+    return senha;
+}
