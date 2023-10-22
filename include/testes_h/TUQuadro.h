@@ -1,3 +1,11 @@
+/**
+ * @file TUQuadro.h
+ *
+ * @brief Definição da classe de teste TUQuadro.
+ *
+ * Autor: Gabriel Kenzo Nomura (211037176)
+ */
+
 #ifndef TESTES_QUADRO_H
 #define TESTES_QUADRO_H
 
