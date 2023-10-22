@@ -1,5 +1,5 @@
-#include "../../include/testes_h/TUCodigo.h"
-#include "../../include/dominios_h/Codigo.h"
+#include "../../include/testes_h/TUColuna.h"
+#include "../../include/dominios_h/Coluna.h"
 #include <iostream>
 
 using namespace std;
