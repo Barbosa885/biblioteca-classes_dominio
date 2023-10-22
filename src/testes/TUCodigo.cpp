@@ -42,7 +42,8 @@ void TUCodigo::testarCenarioSucesso()
   for(const string& codigoValido : CODIGOS_VALIDOS)
   {
     cout << "Testando codigo: " << codigoValido << endl;
-    try{
+    try
+    {
       codigo->setCodigo(codigoValido);
       if(codigo->getCodigo() != codigoValido)
       {

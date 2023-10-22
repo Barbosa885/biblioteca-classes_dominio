@@ -6,6 +6,13 @@
  *
  * Autor: Gabriel Kenzo Nomura ()
  */
+#ifndef SENHA_H
+#define SENHA_H
+
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 class Senha {
     private:
