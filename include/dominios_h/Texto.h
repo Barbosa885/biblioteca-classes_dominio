@@ -1,7 +1,11 @@
-/** 
- * @brief Classe TEXTO.
- * 
- * Esta classe é usada para manipular e verificar uma string de texto.
+/**
+ * @file Texto.h
+ * @brief Definição da classe Texto.
+ *
+ * @brief Esta classe é usada para manipular e verificar uma string de texto.
+ *
+ * Autor: Gabriel Kenzo Nomura ()
+ *
  */
 
 class TEXTO{
