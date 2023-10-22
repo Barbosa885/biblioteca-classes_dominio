@@ -7,7 +7,7 @@
  * Autor: Gabriel Kenzo Nomura ()
  */
 
-class Senha{
+class Senha {
     private:
         /** 
          * @brief Variável de senha.
@@ -33,7 +33,7 @@ class Senha{
          * Este método é usado para obter o valor da variável de senha.
          * @return Retorna a string de senha.
          */
-        string GetSenha();
+        const string &getSenha();
         
         /** 
          * @brief Método SetSenha.
@@ -41,7 +41,7 @@ class Senha{
          * Este método é usado para definir o valor da variável de senha.
          * @param string A nova string de senha.
          */
-        void SetSenha(string);
+        void setSenha(const string &senha);
 };
 
 inline void SENHA::SetSenha(string senha){
