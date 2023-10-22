@@ -15,25 +15,30 @@
 
 using namespace std;
 
-class COLUNA{
-    private:
-        string coluna;
-        void isValid(string);
-        /** 
-        * verifica se a coluna atende a critérios específicos.
-        * @param a coluna verificada.
-        * saída: "argumento inválido" caso a coluna não atenda a um dos críterios estabelecidos.
-        */
-        
-    public:
-        /**
-        * obtem a coluna;
-        * retorna essa coluna.
-        */
-        string GetColuna();
+class Coluna
+{
+private:
+    string coluna;
+    void isValid(const string &coluna);
+    /**
+     * verifica se a coluna atende a critérios específicos.
+     * @param a coluna verificada.
+     * saída: "argumento inválido" caso a coluna não atenda a um dos críterios estabelecidos.
+     */
+
+public:
+    Coluna();          /**< Construtor */
+    virtual ~Coluna(); /**< Destrutor */
+    /**
+     * obtem a coluna;
+     * retorna essa coluna.
+     */
+    const string &getColuna() const;
+    void setColuna(const string &coluna);
 };
 
-inline string COLUNA::GetColuna(){
+inline const string &Coluna::getColuna() const
+{
     return coluna;
 }
 

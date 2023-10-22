@@ -20,7 +20,8 @@
 
 using namespace std;
 
-class LIMITE {
+class Limite 
+{
 private:
     int limite; /**< Variável que armazena o limite. */
 
@@ -28,22 +29,22 @@ private:
      * @brief Verifica se um valor é válido como limite.
      * @param value O valor a ser verificado.
      */
-    void isValid(int value);
+    void isValid(const int &value);
 
 public:
-
     /**
      * @brief Obtém o valor do limite.
      * @return O valor do limite.
      */
-    int GetLimite();
+    int getLimite();
 };
 
 /**
  * @brief Função inline para obter o valor do limite.
  * @return O valor do limite.
  */
-inline int LIMITE::GetLimite() {
+inline int Limite::getLimite() 
+{
     return limite;
 }
 

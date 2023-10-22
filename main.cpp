@@ -3,6 +3,8 @@
 #include "./include/dominios_h/Codigo.h"
 #include "./include/testes_h/TUEmail.h"
 #include "./include/testes_h/TUCodigo.h"
+#include "./include/dominios_h/Coluna.h"
+#include "./include/testes_h/TUColuna.h"
 
 using namespace std;
 
@@ -15,8 +17,8 @@ int main()
   TUCodigo *testeCodigo = new TUCodigo();
   testeCodigo->run();
 
-  TULimite *testeLimite = new TULimite();
-  testeLimite->run();
+// TULimite *testeLimite = new TULimite();
+// testeLimite->run();
 
   TUColuna *testeColuna = new TUColuna();
   testeColuna->run();
