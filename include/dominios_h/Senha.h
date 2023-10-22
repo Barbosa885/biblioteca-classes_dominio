@@ -1,7 +1,10 @@
-/** 
- * @brief Classe SENHA.
- * 
- * Esta classe é usada para manipular e verificar uma string de senha.
+/**
+ * @file Senha.h
+ * @brief Definição da classe Senha.
+ *
+ * @brief Esta classe é usada para manipular e verificar uma string de senha.
+ *
+ * Autor: Gabriel Kenzo Nomura ()
  */
 class SENHA{
     private:
