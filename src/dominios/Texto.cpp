@@ -3,6 +3,8 @@
 #include <iostream>
 #include <regex>
 
+using namespace std;
+
 Texto::Texto()
 {
     //ctor
@@ -28,37 +30,41 @@ void Texto::isValid(const string &texto) {
 * @throw exception_type: argumento invalido caso o texto não atenda um dos critérios estabelecidos.
 */
 
-void verificaDominioTexto(const std::string& texto) {
     // Verifica se o texto tem entre 5 e 30 caracteres
     if (texto.length() < 5 || texto.length() > 30) {
         throw invalid_argument("Texto inválido")
     }
 
     // Verifica se o primeiro caractere é uma letra maiúscula
-    if (!std::regex_search(texto, std::regex("^[A-Z]"))) {
+    if (!regex_search(texto, regex("^[A-Z]"))) {
             throw invalid_argument("Texto inválido")
     }
 
     // Verifica se não há espaços em branco em sequência
-    if (std::regex_search(texto, std::regex("\\s{2,}"))) {
+    if (regex_search(texto, regex("\\s{2,}"))) {
             throw invalid_argument("Texto inválido")
     }
 
     // Verifica se não há sinais de pontuação em sequência, exceto vírgula ou ponto-e-vírgula
-    if (std::regex_search(texto, std::regex("[.,;?!]{2,}"))) {
+    if (regex_search(texto, regex("[.,;?!]{2,}"))) {
             throw invalid_argument("Texto inválido")
     }
 
     // Verifica se não há acentuação (caracteres especiais)
-    if (std::regex_search(texto, std::regex("[áéíóúÁÉÍÓÚàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛãẽĩõũÃẼĨÕŨäëïöüÄËÏÖÜ]"))) {
+    if (regex_search(texto, regex("[áéíóúÁÉÍÓÚàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛãẽĩõũÃẼĨÕŨäëïöüÄËÏÖÜ]"))) {
             throw invalid_argument("Texto inválido")
     }
 
     // Verifica se o primeiro caractere após sinal de pontuação (exceto vírgula ou ponto-e-vírgula) é letra maiúscula
-    if (std::regex_search(texto, std::regex("[.,;?!][a-z]"))) {
+    if (regex_search(texto, regex("[.,;?!][a-z]"))) {
             throw invalid_argument("Texto inválido")
     }
 
     // Se todas as verificações passaram, o texto é válido
     cout << "Texto válido" << endl;
+}
+
+void Texto::setTexto(const string &texto){
+	isValid(texto);
+	this->texto = texto;
 }
