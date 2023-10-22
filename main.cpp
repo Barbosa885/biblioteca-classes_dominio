@@ -7,6 +7,7 @@
 #include "./include/dominios_h/Coluna.h"
 #include "./include/dominios_h/Limite.h"
 #include "./include/dominios_h/Senha.h"
+#include "./include/dominios_h/Texto.h"
 
 // Header testes
 #include "./include/testes_h/TULimite.h"
@@ -14,13 +15,12 @@
 #include "./include/testes_h/TUCodigo.h"
 #include "./include/testes_h/TUEmail.h"
 #include "./include/testes_h/TUSenha.h"
-
+#include "./include/testes_h/TUTexto.h"
 
 using namespace std;
 
 int main()
 {
-
   TUEmail *testeEmail = new TUEmail();
   testeEmail->run();
 
@@ -35,49 +35,8 @@ int main()
 
   TUSenha *testeSenha = new TUSenha();
   testeSenha->run();
+  
+  TUTexto *testeTexto = new TUTexto();
+  testeTexto->run();
 
-
-  // TUSenha testeSenha;
-  // switch(testeSenha.run())
-  // {
-  //   case TUSenha::SUCESSO:
-  //     cout << "SUCESSO - SENHA" << endl;
-  //     break;
-  //   case TUSenha::FALHA:
-  //     cout << "FALHA - SENHA" << endl;
-  //     break;
-  // }
-  //
-  // TUTexto testeTexto;
-  // switch(testeTexto.run())
-  // {
-  //   case TUTexto::SUCESSO:
-  //     cout << "SUCESSO - TEXTO" << endl;
-  //     break;
-  //   case TUTexto::FALHA:
-  //     cout << "FALHA - TEXTO" << endl;
-  //     break;
-  // }
-  //
-  // TULimite testeLimite;
-  // switch(testeLimite.run())
-  // {
-  //   case TULimite::SUCESSO:
-  //     cout << "SUCESSO - LIMITE" << endl;
-  //     break;
-  //   case TULimite::FALHA:
-  //     cout << "FALHA - LIMITE" << endl;
-  //     break;
-  // }
-  //
-  // TUColuna testeColuna;
-  // switch(testeColuna.run())
-  // {
-  //   case TUColuna::SUCESSO:
-  //     cout << "SUCESSO - COLUNA" << endl;
-  //     break;
-  //   case TUColuna::FALHA:
-  //     cout << "FALHA - COLUNA" << endl;
-  //     break;
-  // }
 }

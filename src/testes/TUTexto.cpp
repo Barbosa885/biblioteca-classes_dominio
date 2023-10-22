@@ -1,38 +1,92 @@
-void TUTEXTO::SetUp(){  /** Configura o ambiente de teste. */
-    texto = new TEXTO();
+#include <iostream>
+#include "../../include/testes_h/TUTexto.h"
+#include "../../include/dominios_h/Texto.h"
+
+TUTexto::TUTexto()
+{
+    //ctor
+}
+
+TUTexto::~TUTexto()
+{
+    //dtor
+}
+
+using namespace std;
+
+const string TUTexto::TEXTOS_VALIDOS[] = {
+    "This is a valid text.",
+    "Another valid Text, 1!"
+};
+
+const string TUTexto::TEXTOS_INVALIDOS[] = {
+    "invalid text",
+    "Invalid text.with punctuation and capitals.",
+    "Invalid text with a Double  Space",
+    "Double Punctuation!?",
+    "áçéñtuaçãoInválida",
+    "valid text with leading lowercase",
+    "Erro",
+    "Pneumoultramicroscopicossilicovulcanoconiótico"
+};
+
+void TUTexto::setUp(){  /** Configura o ambiente de teste. */
+    texto = new Texto();
     estado = SUCESSO;
 }
 
-void TUTEXTO::TearDown(){ /** Limpa o ambiente de teste, excluindo a instância TEXTO. */
+void TUTexto::tearDown(){ /** Limpa o ambiente de teste, excluindo a instância TEXTO. */
     delete texto;
 }
 
-void TUTEXTO::TestarCenarioSucesso(){ /** Testa um cenário de sucesso em que o texto é definido como um texto válido. */
-    try{
-        texto->SetTexto(TEXTO_VALIDO);
-        if (texto->GetTexto() != TEXTO_VALIDO)
-            estado = FALHA;
-    }
-    catch(invalid_argument &excecao){
+void TUTexto::testarCenarioSucesso() /** Testa um cenário de sucesso em que o texto é definido como um texto válido. */
+{ 
+  cout << "TEXTO" << endl;
+  cout << "Testando cenário de sucesso..." << endl;
+  for (const string &textoValido : TEXTOS_VALIDOS)
+  {
+    cout << "Testando texto: " << textoValido << endl;
+    try
+    {
+      texto->setTexto(textoValido);
+      if (texto->getTexto() != textoValido)
+      {
         estado = FALHA;
+      } else {
+        cout << "Sucesso: " << texto->getTexto() << endl;
+        estado = SUCESSO;
+      }
     }
+    catch(invalid_argument &e)
+    {
+      cout << "Exceção lançada: " << e.what() << endl;
+      estado = FALHA;
+    }
+  }
 }
 
-void TUTEXTO::TestarCenarioFalha(){ /** Testa um cenário de falha em que o texto é definido como um texto inválido. */
-    try{
-        texto->SetTexto(TEXTO_INVALIDO);
-        estado = FALHA;
+void TUTexto::testarCenarioFalha() /** Testa um cenário de falha em que o texto é definido como um texto inválido. */
+{ 
+  cout << "Testando cenário de falha..." << endl;
+  for (const string &textoInvalido : TEXTOS_INVALIDOS)
+  {
+    cout << "Testando texto: " << textoInvalido << endl;
+    try
+    {
+      texto->setTexto(textoInvalido);
+      estado = FALHA;
     }
-    catch(invalid_argument &excecao){
-        if (texto->GetTexto() == TEXTO_INVALIDO)
-            estado = FALHA;
+    catch(invalid_argument &e)
+    {
+      cout << "Exceção lançada: " << e.what() << endl;
+      estado = FALHA;
     }
+  }
 }
 
-int TUTEXTO::Run(){
-    SetUp();
-    TestarCenarioSucesso();
-    TestarCenarioFalha();
-    TearDown();
-    return estado; /**< Retorna o estado final dos testes (SUCESSO ou FALHA). */
+void TUTexto::run(){
+  setUp();
+  testarCenarioSucesso();
+  testarCenarioFalha();
+  tearDown();
 }

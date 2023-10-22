@@ -1,5 +1,22 @@
-void TEXTO::isValid(string texto) {
-/** 
+#include "../../include/dominios_h/Texto.h"
+#include <string>
+#include <iostream>
+#include <regex>
+
+using namespace std;
+
+Texto::Texto()
+{
+    //ctor
+}
+
+Texto::~Texto()
+{
+    //dtor
+}
+
+void Texto::isValid(const string &texto) {
+/**
  * @brief
 * verifica se o texto atende a alguns critérios específicos:
 * - O texto deve ter no mínimo 5 e no máximo 30 caracteres;
@@ -12,30 +29,39 @@ void TEXTO::isValid(string texto) {
 * @param o texto verificado
 * @throw exception_type: argumento invalido caso o texto não atenda um dos critérios estabelecidos.
 */
-    string pontuacao = ".,;!?";
-    if (!isupper(texto[0]))
-        throw invalid_argument("Argumento invalido");
-    if (texto.length() < 5 || texto.length() > 30)
-        throw invalid_argument("Argumento invalido");
-    for (int i = 1; i < texto.length(); i++) {
-        if (isalnum(texto[i]))
-            continue;
-        else if (find(pontuacao.begin(), pontuacao.end(), texto[i]) != pontuacao.end()) {
-            if (i != texto.length() -1){
-                if (find(pontuacao.begin(), pontuacao.end(), texto[i+1]) != pontuacao.end())
-                    throw invalid_argument("Argumento invalido");
-                if (texto[i] == ',' || texto[i] == ';')
-                    continue;
-                if (!isupper(texto[i+1]))
-                    throw invalid_argument("Argumento invalido");
-            }    
-        }
-        else if (texto[i] == ' ') {
-            if (i != texto.length() -1){
-                if (texto[i+1] == ' ')
-                    throw invalid_argument("Argumento invalido");
-                continue;
-            }
-        }
+
+    // Verifica se o texto tem entre 5 e 30 caracteres
+    if (texto.length() < 5 || texto.length() > 30) {
+        throw invalid_argument("Texto inválido");
     }
+
+    // Verifica se o primeiro caractere é uma letra maiúscula
+    if (!regex_search(texto, regex("^[A-Z]"))) {
+            throw invalid_argument("Texto inválido");
+    }
+
+    // Verifica se não há espaços em branco em sequência
+    if (regex_search(texto, regex("\\s{2,}"))) {
+            throw invalid_argument("Texto inválido");
+    }
+
+    // Verifica se não há sinais de pontuação em sequência, exceto vírgula ou ponto-e-vírgula
+    if (regex_search(texto, regex("[.,;?!]{2,}"))) {
+            throw invalid_argument("Texto inválido");
+    }
+
+    // Verifica se não há acentuação (caracteres especiais)
+    if (regex_search(texto, regex("[áéíóúÁÉÍÓÚàèìòùÀÈÌÒÙâêîôûÂÊÎÔÛãẽĩõũÃẼĨÕŨäëïöüÄËÏÖÜ]"))) {
+            throw invalid_argument("Texto inválido");
+    }
+
+    // Verifica se o primeiro caractere após sinal de pontuação (exceto vírgula ou ponto-e-vírgula) é letra maiúscula
+    if (regex_search(texto, regex("[.,;?!][a-z]"))) {
+            throw invalid_argument("Texto inválido");
+    }
+}
+
+void Texto::setTexto(const string &texto){
+	isValid(texto);
+	this->texto = texto;
 }

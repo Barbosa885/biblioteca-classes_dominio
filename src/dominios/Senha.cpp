@@ -3,6 +3,8 @@
 #include <string>
 #include "../../include/dominios_h/Senha.h"
 
+using namespace std;
+
 Senha::Senha()
 {
   //ctor
