@@ -9,7 +9,7 @@ using namespace std;
 class LIMITE{
     private:
         int limite;
-        void verifica(int);
+        void isValid(int);
         /**
         * verifica se o limite atende a alguns critérios específicos.
         * @param limite verificado.
@@ -17,22 +17,15 @@ class LIMITE{
         */
         
     public:
-        int GetLimite();
         /**
         * obtem o limite;
         * retorna esse limite.
         */
-        void SetLimite(int);
-        /**
-        * define o limite.
-        */
+        int GetLimite();
 };
-
-inline void LIMITE::SetLimite(int limite){
-    verifica(limite);
-    this -> limite = limite;
-}
 
 inline int LIMITE::GetLimite(){
     return limite;
 }
+
+#endif // LIMITE_H

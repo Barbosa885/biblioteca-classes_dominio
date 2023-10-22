@@ -19,43 +19,24 @@ using namespace std;
  */
 class COLUNA{
     private:
-        string coluna; /**< O nome da coluna. */
-
-        /**
-         * Verifica se uma string é válida para a coluna.
-         * @param str A string a ser verificada.
-         */
-        void verifica(string str);
+        string coluna;
+        void isValid(string);
+        /** 
+        * verifica se a coluna atende a critérios específicos.
+        * @param a coluna verificada.
+        * saída: "argumento inválido" caso a coluna não atenda a um dos críterios estabelecidos.
+        */
         
     public:
         /**
-         * Obtém o nome da coluna.
-         * @return O nome da coluna.
-         */
+        * obtem a coluna;
+        * retorna essa coluna.
+        */
         string GetColuna();
-
-        /**
-         * Define o nome da coluna após a verificação.
-         * @param coluna O novo nome da coluna a ser definido.
-         */
-        void SetColuna(string coluna);
 };
 
-/**
- * Define o nome da coluna após a verificação.
- * @param coluna O novo nome da coluna a ser definido.
- */
-inline void COLUNA::SetColuna(string coluna){
-    verifica(coluna);
-    this -> coluna = coluna;
-}
-
-/**
- * Obtém o nome da coluna.
- * @return O nome da coluna.
- */
 inline string COLUNA::GetColuna(){
     return coluna;
 }
 
-#endif
+#endif // COLUNA_H
