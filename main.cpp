@@ -15,6 +15,12 @@ int main()
   TUCodigo *testeCodigo = new TUCodigo();
   testeCodigo->run();
 
+  TULimite *testeLimite = new TULimite();
+  testeLimite->run();
+
+  TUColuna *testeColuna = new TUColuna();
+  testeColuna->run();
+
 // TUSenha testeSenha;
 // switch(testeSenha.run())
 // {
