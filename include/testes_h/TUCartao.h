@@ -1,3 +1,10 @@
+/**
+ * @file TUCartao.h
+ * @brief Definição da classe de teste TUCartao.
+ *
+ * Autor: Hideki Tomiyama (190014351)
+ */
+
 #ifndef TESTES_CARTAO_H
 #define TESTES_CARTAO_H
 
