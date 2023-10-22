@@ -3,11 +3,11 @@ void SENHA::isValid(string senha){
  * @brief
 * verifica se a senha atende a alguns critérios específicos:
 * - Deve conter exatamente 5 caracteres;
-* - Deve conter pelo menos um caractere maiúsculo;
-* - Deve conter pelo menos um caractere minúsculo;
-* - Deve conter pelo menos um dígito;
-* - Deve conter pelo menos um dos seguintes caracteres de pontuação: '.', ',', '!', '?', ';';
-* - Não deve conter caracteres repetidos;
+* - Pelo menos um caractere é letra maiúscula;
+* - Pelo menos um caractere é letra minúscula;
+* - Pelo menos um caractere é dígito;
+* - Pelo menos um caracter é sinal de pontuação;
+* - Não há caractere duplicado;
 * @param senha a ser verificada.
 * @throw exception_type: argumento invalido caso a senha não atenda um dos critérios estabelecidos.
 */
