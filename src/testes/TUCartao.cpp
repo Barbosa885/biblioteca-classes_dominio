@@ -1,4 +1,7 @@
 #include "../testes_h/TUCartao.h"
+#include "../dominios_h/Codigo.h"
+#include "../dominios_h/Texto.h"
+#include "../dominios_h/Coluna.h"
 
 void TUCartao::setUp(){
     cartao = new Cartao();
