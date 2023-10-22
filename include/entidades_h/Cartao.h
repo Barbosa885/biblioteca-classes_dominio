@@ -1,7 +1,9 @@
-#ifndef ENTIDADES_H_INCLUDED
-#define ENTIDADES_H_INCLUDED
+#ifndef CARTAO_H_INCLUDED
+#define CARTAO_H_INCLUDED
 
-#include "dominios.h"
+#include "../dominios_h/Codigo.h"
+#include "../dominios_h/Texto.h"
+#include "../dominios_h/Coluna.h"
 #include <string>
 
 using namespace std;
@@ -138,3 +140,5 @@ inline Texto Cartao::getDescricao() const{
 inline Coluna Cartao::getColuna() const{
     return coluna;
 }
+
+#endif // CARTAO_H_INCLUDED
