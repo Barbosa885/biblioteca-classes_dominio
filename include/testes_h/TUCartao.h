@@ -10,17 +10,19 @@ using namespace std;
 
 class TUCartao {
 private:
-    const static string CODIGOS_VALIDOS[];   
-    const static string CODIGOS_INVALIDOS[];
-    Projeto *projeto;                       // Referência para unidade em teste.
-    int estado;                             // Estado do teste.
-    void setUp();                           // Método para criar unidade em teste.
-    void tearDown();                        // Método para destruir unidade em teste.
-    void testarCenarioSucesso();            // Cenário de teste.
+    const static string CODIGO_VALIDO = "NM01"; 
+    const static string NOME_VALIDO = "Arroz"; 
+    const static string DESCRICAO_VALIDA = "Vamos testar codigos"; 
+    const static string COLUNA_VALIDA = "CONCLUIDO"; 
+    CARTAO *cartao;
+    int estado;                             
+    void setUp();                           
+    void tearDown();                        
+    void testarCenarioSucesso();            
 public:
-    const static int SUCESSO =  0;          // Definição de constante para reportar resultado de teste.
-    const static int FALHA   = -1;          // Definição de constante para reportar resultado de teste.
-    int run();                              // Método para executar teste.
+    const static int SUCESSO =  0;          
+    const static int FALHA   = -1;          
+    int run();                              
 };
 
 #endif // TESTES_H_INCLUDED
