@@ -5,6 +5,7 @@
  *
  * Autor: Gabriel Kenzo Nomura (211037176)
  */
+
 #ifndef TESTE_SENHA_H
 #define TESTE_SENHA_H
 
