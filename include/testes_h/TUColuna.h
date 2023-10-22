@@ -1,3 +1,9 @@
+/**
+ * @file TUColuna.h
+ *
+ * Autor: Hideki Tomiyama (190014351)
+ */
+
 class TUCOLUNA {
 private:
     const string COLUNA_VALIDA = "CONCLUIDO"; /**< Constante que representa uma coluna valida para o teste. */
