@@ -2,7 +2,7 @@
  * @file Coluna.h
  * @brief Definição da classe Coluna.
  *
- * Uma classe que representa uma coluna de dados.
+ * @brief Uma classe que representa uma coluna de dados.
  *
  * Autor: Hideki Tomiyama (190014351)
  */
