@@ -1,3 +1,9 @@
+#include "../../include/testes_h/TUCodigo.h"
+#include "../../include/dominios_h/Codigo.h"
+#include <iostream>
+
+using namespace std;
+
 /**
  * @file TUColuna.cpp
  *
@@ -8,6 +14,7 @@
  * Esta função é responsável por configurar o ambiente de teste. 
  * Ela inicializa a coluna e define o estado para SUCESSO.
  */
+
 void TUCOLUNA::SetUp(){
     coluna = new COLUNA();
     estado = SUCESSO;
