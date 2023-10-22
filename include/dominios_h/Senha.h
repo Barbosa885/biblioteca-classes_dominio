@@ -7,7 +7,7 @@
  * Autor: Gabriel Kenzo Nomura ()
  */
 
-class SENHA{
+class Senha{
     private:
         /** 
          * @brief Variável de senha.
@@ -25,6 +25,8 @@ class SENHA{
         void isValid(const string &senha);
     
     public:
+        Senha();
+        virtual ~Senha();
         /** 
          * @brief Método GetSenha.
          * 
