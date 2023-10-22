@@ -10,7 +10,7 @@ using namespace std;
 
 class TUCartao {
 private:
-    const static string CODIGO_VALIDO = "NM01"; 
+    const static string CODIGO_VALIDO = "AB12"; 
     const static string NOME_VALIDO = "Arroz"; 
     const static string DESCRICAO_VALIDA = "Vamos testar codigos"; 
     const static string COLUNA_VALIDA = "CONCLUIDO"; 
