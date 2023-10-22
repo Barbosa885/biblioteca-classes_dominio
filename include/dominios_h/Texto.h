@@ -22,7 +22,7 @@ class TEXTO{
          * Este método privado é usado para verificar a string de texto de acordo com algum critério.
          * @param string A string a ser verificada.
          */
-        void verifica(string);
+        void isValid(string);
     
     public:
         /** 
