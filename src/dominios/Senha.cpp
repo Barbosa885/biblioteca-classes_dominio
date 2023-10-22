@@ -1,4 +1,14 @@
-void SENHA::isValid(string senha){
+Senha::Senha()
+{
+	//ctor
+}
+
+Senha::~Senha()
+{
+	//dtor	
+}
+
+void Senha::isValid(const string &senha){
 /** 
  * @brief
 * verifica se a senha atende a alguns critérios específicos:
@@ -52,4 +62,9 @@ void SENHA::isValid(string senha){
     }
     if (!(maiusculo & minusculo & digito & ponto & repetido))
         throw invalid_argument("Argumento invalido");
+}
+
+void Senha::setSenha(const string &senha){
+	isValid(senha);
+	this->senha = senha;
 }
