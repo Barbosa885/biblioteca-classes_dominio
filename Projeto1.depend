@@ -134,7 +134,7 @@
 	<string>
 	"../dominios_h/Texto.h"
 
-1698019975 /home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h
+1698024297 /home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h
 	"../dominios_h/Codigo.h"
 	"../dominios_h/Texto.h"
 	"../dominios_h/Coluna.h"
@@ -153,7 +153,7 @@
 	"../entidades_h/Cartao.h"
 	<string>
 
-1698022611 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUQuadro.h
+1698024180 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUQuadro.h
 	"../dominios_h/Codigo.h"
 	"../dominios_h/Texto.h"
 	"../dominios_h/Limite.h"
@@ -165,6 +165,6 @@
 
 1698020890 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUConta.cpp
 
-1698023218 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUQuadro.cpp
+1698023570 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUQuadro.cpp
 	"../../include/testes_h/TUQuadro.h"
 
