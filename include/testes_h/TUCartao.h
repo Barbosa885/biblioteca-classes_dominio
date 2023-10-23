@@ -23,35 +23,37 @@ using namespace std;
  */
 class TUCartao {
 private:
-    const static string CODIGO_VALIDO; ///< Código válido para teste
-    const static string NOME_VALIDO; ///< Nome válido para teste
-    const static string DESCRICAO_VALIDA; ///< Descrição válida para teste
-    const static string COLUNA_VALIDA; ///< Coluna válida para teste
+    string CODIGO_VALIDO = "AB12"; ///< Código válido para teste
+    string NOME_VALIDO = "Gustavo barbosa"; ///< Nome válido para teste
+    string DESCRICAO_VALIDA = "Isso e uma descricao"; ///< Descrição válida para teste
+    string COLUNA_VALIDA = "CONCLUIDO"; ///< Coluna válida para teste
     Cartao *cartao; ///< Ponteiro para o objeto Cartao a ser testado
     int estado; ///< Estado do teste
 
     /**
      * @brief Configura o ambiente de teste.
      */
-    void setUp();                           
+    void setUp();
 
     /**
      * @brief Limpa o ambiente de teste.
      */
-    void tearDown();                        
+    void tearDown();
 
     /**
      * @brief Testa um cenário de sucesso.
      */
-    void testarCenarioSucesso();            
+    void testarCenarioSucesso();
 public:
-    const static int SUCESSO; ///< Indica que o teste foi bem-sucedido
-    const static int FALHA; ///< Indica que o teste falhou
+    TUCartao();
+    virtual ~TUCartao();
+    const static int SUCESSO = 0; ///< Indica que o teste foi bem-sucedido
+    const static int FALHA = -1; ///< Indica que o teste falhou
 
     /**
      * @brief Executa o teste.
      */
-    void run();                              
+    void run();
 };
 
 #endif // TESTES_CARTAO_H

@@ -1,6 +1,6 @@
-#include <iostream>
 #include "../../include/testes_h/TUSenha.h"
 #include "../../include/dominios_h/Senha.h"
+#include <iostream>
 
 TUSenha::TUSenha()
 {

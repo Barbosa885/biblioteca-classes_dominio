@@ -37,3 +37,5 @@ public:
     /**< Metodo publico */
     void run(); /**< Método para executar os testes de unidade. */
 };
+
+#endif // TESTE_SENHA_H

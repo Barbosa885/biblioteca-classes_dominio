@@ -1,0 +1,23 @@
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:123: warning: argument 'Codigo' of command @param is not found in the argument list of Cartao::setCodigo(const Codigo &codigo)
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:123: warning: The following parameter of Cartao::setCodigo(const Codigo &codigo) is not documented:
+  parameter 'codigo'
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:82: warning: argument 'Coluna' of command @param is not found in the argument list of Cartao::setColuna(const Coluna &coluna)
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:82: warning: The following parameter of Cartao::setColuna(const Coluna &coluna) is not documented:
+  parameter 'coluna'
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:74: warning: argument 'Texto' of command @param is not found in the argument list of Cartao::setDescricao(const Texto &descricao)
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:74: warning: The following parameter of Cartao::setDescricao(const Texto &descricao) is not documented:
+  parameter 'descricao'
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:66: warning: argument 'Texto' of command @param is not found in the argument list of Cartao::setNome(const Texto &nome)
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h:66: warning: The following parameter of Cartao::setNome(const Texto &nome) is not documented:
+  parameter 'nome'
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Coluna.h:30: warning: Coluna::Coluna has @param documentation sections but no arguments
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Limite.h:29: warning: Limite::Limite has @param documentation sections but no arguments
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Limite.h:33: warning: found documented return type for Limite::setLimite that does not return anything
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Senha.h:49: warning: argument 'string' of command @param is not found in the argument list of Senha::setSenha(const string &senha)
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Senha.h:49: warning: The following parameter of Senha::setSenha(const string &senha) is not documented:
+  parameter 'senha'
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Texto.h:49: warning: argument 'string' of command @param is not found in the argument list of Texto::setTexto(const string &texto)
+/home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Texto.h:49: warning: The following parameter of Texto::setTexto(const string &texto) is not documented:
+  parameter 'texto'
+/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUColuna.cpp:120: warning: found documented return type for TUColuna::run that does not return anything
+/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TULimite.cpp:100: warning: found documented return type for TULimite::run that does not return anything

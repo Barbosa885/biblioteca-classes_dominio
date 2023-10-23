@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1698009411 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
+1698023324 source:/home/barbosa/unb/TP1-2023.2/Projeto1/main.cpp
 	<iostream>
 	"./include/dominios_h/Email.h"
 	"./include/dominios_h/Codigo.h"
@@ -7,14 +7,18 @@
 	"./include/dominios_h/Limite.h"
 	"./include/dominios_h/Senha.h"
 	"./include/dominios_h/Texto.h"
+	"./include/entidades_h/Cartao.h"
+	"./include/entidades_h/Quadro.h"
 	"./include/testes_h/TULimite.h"
 	"./include/testes_h/TUColuna.h"
 	"./include/testes_h/TUCodigo.h"
 	"./include/testes_h/TUEmail.h"
 	"./include/testes_h/TUSenha.h"
 	"./include/testes_h/TUTexto.h"
+	"./include/testes_h/TUCartao.h"
+	"./include/testes_h/TUQuadro.h"
 
-1698009852 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Email.h
+1698016096 /home/barbosa/unb/TP1-2023.2/Projeto1/include/dominios_h/Email.h
 	<string>
 	<sstream>
 
@@ -33,7 +37,7 @@
 	"../../include/dominios_h/Codigo.h"
 	<iostream>
 
-1697982871 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Email.cpp
+1698019965 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Email.cpp
 	<regex>
 	<stdexcept>
 	<string>
@@ -67,7 +71,7 @@
 	"../../include/testes_h/TUColuna.h"
 	"../../include/dominios_h/Coluna.h"
 
-1698010261 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUColuna.h
+1698020535 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUColuna.h
 	<iostream>
 	<string>
 	"../dominios_h/Coluna.h"
@@ -76,7 +80,7 @@
 	<string>
 	<stdexcept>
 
-1698010204 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TULimite.h
+1698020733 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TULimite.h
 	<iostream>
 	"../dominios_h/Limite.h"
 
@@ -94,15 +98,15 @@
 	<iostream>
 	<string>
 
-1698010234 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUSenha.h
+1698020194 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUSenha.h
 	<iostream>
 	<string>
 	"../dominios_h/Senha.h"
 
-1698006689 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUSenha.cpp
-	<iostream>
+1698020330 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUSenha.cpp
 	"../../include/testes_h/TUSenha.h"
 	"../../include/dominios_h/Senha.h"
+	<iostream>
 
 1698009411 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/dominios/Senha.cpp
 	<iostream>
@@ -125,8 +129,42 @@
 	"../../include/testes_h/TUTexto.h"
 	"../../include/dominios_h/Texto.h"
 
-1698010267 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUTexto.h
+1698020716 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUTexto.h
 	<iostream>
 	<string>
 	"../dominios_h/Texto.h"
+
+1698019975 /home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Cartao.h
+	"../dominios_h/Codigo.h"
+	"../dominios_h/Texto.h"
+	"../dominios_h/Coluna.h"
+	<string>
+
+1698021928 /home/barbosa/unb/TP1-2023.2/Projeto1/include/entidades_h/Quadro.h
+	"../dominios_h/Codigo.h"
+	"../dominios_h/Texto.h"
+	"../dominios_h/Limite.h"
+	<string>
+
+1698022631 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUCartao.h
+	"../dominios_h/Codigo.h"
+	"../dominios_h/Texto.h"
+	"../dominios_h/Coluna.h"
+	"../entidades_h/Cartao.h"
+	<string>
+
+1698022611 /home/barbosa/unb/TP1-2023.2/Projeto1/include/testes_h/TUQuadro.h
+	"../dominios_h/Codigo.h"
+	"../dominios_h/Texto.h"
+	"../dominios_h/Limite.h"
+	"../entidades_h/Quadro.h"
+	<string>
+
+1698023304 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUCartao.cpp
+	"../../include/testes_h/TUCartao.h"
+
+1698020890 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUConta.cpp
+
+1698023218 source:/home/barbosa/unb/TP1-2023.2/Projeto1/src/testes/TUQuadro.cpp
+	"../../include/testes_h/TUQuadro.h"
 

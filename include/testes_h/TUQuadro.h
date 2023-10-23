@@ -3,7 +3,7 @@
  *
  * @brief Definição da classe de teste TUQuadro.
  *
- * Autor: Gabriel Kenzo Nomura (211037176)
+ * Autor: Hideki Tomiyama (190014351)
  */
 
 #ifndef TESTES_QUADRO_H
@@ -23,35 +23,37 @@ using namespace std;
  */
 class TUQuadro {
 private:
-    const static string CODIGO_VALIDO; ///< Código válido para teste
-    const static string NOME_VALIDO; ///< Nome válido para teste
-    const static string DESCRICAO_VALIDA; ///< Descrição válida para teste
-    const static int LIMITE_VALIDO; ///< Limite válido para teste
+    string CODIGO_VALIDO = ""; ///< Código válido para teste
+    string NOME_VALIDO = "Gustavo Barbosa"; ///< Nome válido para teste
+    string DESCRICAO_VALIDA = "Descricao valida"; ///< Descrição válida para teste
+    int LIMITE_VALIDO = 5; ///< Limite válido para teste
     Quadro *quadro; ///< Ponteiro para o objeto Quadro a ser testado
     int estado; ///< Estado do teste
 
     /**
      * @brief Configura o ambiente de teste.
      */
-    void setUp();                           
+    void setUp();
 
     /**
      * @brief Limpa o ambiente de teste.
      */
-    void tearDown();                        
+    void tearDown();
 
     /**
      * @brief Testa um cenário de sucesso.
      */
-    void testarCenarioSucesso();            
+    void testarCenarioSucesso();
 public:
-    const static int SUCESSO; ///< Indica que o teste foi bem-sucedido
-    const static int FALHA; ///< Indica que o teste falhou
+    TUQuadro();
+    virtual ~TUQuadro();
+    const static int SUCESSO = 0; ///< Indica que o teste foi bem-sucedido
+    const static int FALHA = -1; ///< Indica que o teste falhou
 
     /**
      * @brief Executa o teste.
      */
-    void run();                              
+    void run();
 };
 
 #endif // TESTES_QUADRO_H

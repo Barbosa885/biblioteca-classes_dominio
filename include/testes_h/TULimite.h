@@ -33,3 +33,5 @@ public:
     const static int FALHA = -1;          /**< Constante que representa o estado de falha do teste. */
     void run();                           /**< Método para executar os testes de unidade. */
 };
+
+#endif // TESTE_LIMITE_H

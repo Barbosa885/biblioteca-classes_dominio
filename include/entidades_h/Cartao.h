@@ -3,7 +3,7 @@
  *
  * @brief Definição da classe Cartao.
  *
- * Autor: Hideki Tomiyama (190014351)
+ * Autor: Gustavo Barbosa (202037589)
  */
 
 #ifndef CARTAO_H_INCLUDED

@@ -7,7 +7,7 @@
  */
 
 #ifndef TESTE_COLUNA_H
-#define TESTES_COLUNA_H
+#define TESTE_COLUNA_H
 
 #include <iostream>
 #include <string>
@@ -37,3 +37,5 @@ public:
     /**< Metodo publico */
     void run(); /**< Método para executar os testes de unidade. */
 };
+
+#endif // TESTE_COLUNA_H

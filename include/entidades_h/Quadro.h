@@ -26,7 +26,7 @@ class Quadro {
         Texto nome; ///< Nome do quadro
         Texto descricao; ///< Descrição do quadro
         Limite limite; ///< Limite do quadro
-    
+
     public:
         /**
          * @brief Define o código do quadro.
@@ -50,32 +50,32 @@ class Quadro {
          * @brief Define o limite do quadro.
          * @param limite O novo limite.
          */
-        void setLimite(const Limite&); 
+        void setLimite(const Limite&);
 
         /**
          * @brief Obtém o código do quadro.
          * @return O código atual.
          */
-        Codigo getCodigo() const;    
+        Codigo getCodigo() const;
 
         /**
          * @brief Obtém o nome do quadro.
          * @return O nome atual.
          */
-        Texto getNome() const;         
+        Texto getNome() const;
 
         /**
          * @brief Obtém a descrição do quadro.
          * @return A descrição atual.
          */
-        Texto getDescricao() const;         
+        Texto getDescricao() const;
 
         /**
          * @brief Obtém o limite do quadro.
          * @return O limite atual.
          */
-        Limite getLimite() const;        
-}; 
+        Limite getLimite() const;
+};
 
 inline void Quadro::setCodigo(const Codigo &codigo){
     this->codigo = codigo;
@@ -98,7 +98,7 @@ inline Texto Quadro::getNome() const{
 inline Texto Quadro::getDescricao() const{
     return descricao;
 }
-inline Coluna Quadro::getLimite() const{
+inline Limite Quadro::getLimite() const{
     return limite;
 }
 
