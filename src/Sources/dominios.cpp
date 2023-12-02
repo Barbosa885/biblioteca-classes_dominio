@@ -1,4 +1,3 @@
-
 #include "dominios.h"
 #include <cstring>
 #include <string>
