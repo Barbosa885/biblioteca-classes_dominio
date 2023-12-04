@@ -1,4 +1,4 @@
-#include "testes.h"
+#include "../include/testes.h"
 
 void Teste_Limite::CriarUn(){
     limite = new Limite();

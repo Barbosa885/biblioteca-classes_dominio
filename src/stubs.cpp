@@ -1,4 +1,4 @@
-#include "stubs.h"
+#include "../include/stubs.h"
 
 //-----------------------------------------------------------------------------------------
 // Implementações de métodos de classe stub.
