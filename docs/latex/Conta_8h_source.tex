@@ -1,0 +1,64 @@
+\doxysection{Conta.\+h}
+\hypertarget{Conta_8h_source}{}\label{Conta_8h_source}\index{/home/barbosa/unb/TP1-\/SS/Trabalho\_1/include/entidades\_h/Conta.h@{/home/barbosa/unb/TP1-\/SS/Trabalho\_1/include/entidades\_h/Conta.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONTA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONTA\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../dominios\_h/Cpf.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}../dominios\_h/Nome.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}../dominios\_h/Senha.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Aluno:\ Gustavo\ Barbosa\ de\ Almeida\ -\/\ 202037589}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classConta}{Conta}}\ \{}
+\DoxyCodeLine{00019\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classCpf}{Cpf}}\ cpf;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classNome}{Nome}}\ nome;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classSenha}{Senha}}\ senha;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConta_a08f59d29d1115cfe2a755ebecb4770c2}{setCpf}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCpf}{Cpf}}\&\ cpf);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classCpf}{Cpf}}\ \mbox{\hyperlink{classConta_a3ddd948f1e8cc281862bf752c858f015}{getCpf}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConta_ac25528baa5dbe31f563d95f72c42ab48}{setSenha}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSenha}{Senha}}\&\ senha);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{classSenha}{Senha}}\ \mbox{\hyperlink{classConta_aa36f37646e006dc200f82bc9f384d79b}{getSenha}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConta_ac18deca77923cb9103db8d83b47e53f3}{setNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNome}{Nome}}\&\ nome);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{classNome}{Nome}}\ \mbox{\hyperlink{classConta_aac660b7dd90148ff41f89f3732f0d52b}{getNome}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ \};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConta_a08f59d29d1115cfe2a755ebecb4770c2}{Conta::setCpf}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classCpf}{Cpf}}\&\ cpf)\ \{}
+\DoxyCodeLine{00080\ \ \ this-\/>cpf\ =\ cpf;}
+\DoxyCodeLine{00081\ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00083\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classCpf}{Cpf}}\ \mbox{\hyperlink{classConta_a3ddd948f1e8cc281862bf752c858f015}{Conta::getCpf}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordflow}{return}\ cpf;}
+\DoxyCodeLine{00085\ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConta_ac25528baa5dbe31f563d95f72c42ab48}{Conta::setSenha}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classSenha}{Senha}}\&\ senha)\ \{}
+\DoxyCodeLine{00088\ \ \ this-\/>senha\ =\ senha;}
+\DoxyCodeLine{00089\ \}}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classSenha}{Senha}}\ \mbox{\hyperlink{classConta_aa36f37646e006dc200f82bc9f384d79b}{Conta::getSenha}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00092\ \ \ \textcolor{keywordflow}{return}\ senha;}
+\DoxyCodeLine{00093\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConta_ac18deca77923cb9103db8d83b47e53f3}{Conta::setNome}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classNome}{Nome}}\&\ nome)\ \{}
+\DoxyCodeLine{00096\ \ \ this-\/>nome\ =\ nome;}
+\DoxyCodeLine{00097\ \}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{classNome}{Nome}}\ \mbox{\hyperlink{classConta_aac660b7dd90148ff41f89f3732f0d52b}{Conta::getNome}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordflow}{return}\ nome;}
+\DoxyCodeLine{00101\ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CONTA\_H}}
+
+\end{DoxyCode}

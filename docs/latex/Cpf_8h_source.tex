@@ -1,0 +1,42 @@
+\doxysection{Cpf.\+h}
+\hypertarget{Cpf_8h_source}{}\label{Cpf_8h_source}\index{/home/barbosa/unb/TP1-\/SS/Trabalho\_1/include/dominios\_h/Cpf.h@{/home/barbosa/unb/TP1-\/SS/Trabalho\_1/include/dominios\_h/Cpf.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CPF\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CPF\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{//\ Aluno:\ Gustavo\ Barbosa\ de\ Almeida\ -\/\ 202037589}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCpf}{Cpf}}\ \{}
+\DoxyCodeLine{00017\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{string}\ cpf;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ TAMANHO\_MAX\ =\ 11;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ validar(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ cpf);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarDigitos(\textcolor{keywordtype}{int}\ digito1,\ \textcolor{keywordtype}{int}\ digito2,\ \textcolor{keywordtype}{string}\ digitos);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{bool}\ validarFormato(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ cpf);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ public\ :}
+\DoxyCodeLine{00067\ \ \ \ \ \mbox{\hyperlink{classCpf_a581560b5c8c2f7bd3d509325b50c1e60}{Cpf}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classCpf_acc7d5f4653bc452046c20fc68d76e5ff}{\string~Cpf}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCpf_a9b04c39a66b909dd2d675d37ae532f2e}{setCpf}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ cpf);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classCpf_a653a6fc70f3281104a15b0891cd5acdf}{getCpf}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classCpf_a653a6fc70f3281104a15b0891cd5acdf}{Cpf::getCpf}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00095\ \ \ \textcolor{keywordflow}{return}\ cpf;}
+\DoxyCodeLine{00096\ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CPF\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,40 @@
+\doxysection{Estado.\+h}
+\hypertarget{Estado_8h_source}{}\label{Estado_8h_source}\index{/home/barbosa/unb/TP1-\/SS/Trabalho\_1/include/dominios\_h/Estado.h@{/home/barbosa/unb/TP1-\/SS/Trabalho\_1/include/dominios\_h/Estado.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ESTADO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ESTADO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Aluno:\ Gustavo\ Barbosa\ de\ Almeida\ -\/\ 202037589}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEstado}{Estado}}\ \{}
+\DoxyCodeLine{00019\ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{static}\ vector<string>\ ESTADOS;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{string}\ estado;}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ validar(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ estado);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{classEstado_aa956f333e0d0b9c54bc8c94055966ea2}{Estado}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classEstado_a8bb18423eb811e665d831fcaeb0ccf70}{\string~Estado}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEstado_aafb9477f0508a971eec89b6d0854b9c5}{setEstado}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ estado);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classEstado_aedbb6c1d75f1dbe5d5869d147d14fc20}{getEstado}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classEstado_aedbb6c1d75f1dbe5d5869d147d14fc20}{Estado::getEstado}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00073\ \ \ \textcolor{keywordflow}{return}\ estado;}
+\DoxyCodeLine{00074\ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ESTADO\_H}}
+
+\end{DoxyCode}

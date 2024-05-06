@@ -1,0 +1,70 @@
+\doxysection{Estado Class Reference}
+\hypertarget{classEstado}{}\label{classEstado}\index{Estado@{Estado}}
+
+
+Classe responsável pela representação de um estado.  
+
+
+
+
+{\ttfamily \#include $<$Estado.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEstado_aa956f333e0d0b9c54bc8c94055966ea2}\label{classEstado_aa956f333e0d0b9c54bc8c94055966ea2} 
+{\bfseries Estado} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \doxylink{classEstado}{Estado}. \end{DoxyCompactList}\item 
+\Hypertarget{classEstado_a8bb18423eb811e665d831fcaeb0ccf70}\label{classEstado_a8bb18423eb811e665d831fcaeb0ccf70} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Estado} ()
+\begin{DoxyCompactList}\small\item\em Destrutor padrão da classe \doxylink{classEstado}{Estado}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEstado_aafb9477f0508a971eec89b6d0854b9c5}{set\+Estado}} (const string \&estado)
+\begin{DoxyCompactList}\small\item\em Define o estado. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classEstado_aedbb6c1d75f1dbe5d5869d147d14fc20}{get\+Estado}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o estado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável pela representação de um estado. 
+
+Esta classe encapsula a lógica relacionada ao gerenciamento de estados, incluindo a validação do estado e a manipulação de seus componentes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEstado_aedbb6c1d75f1dbe5d5869d147d14fc20}\label{classEstado_aedbb6c1d75f1dbe5d5869d147d14fc20} 
+\index{Estado@{Estado}!getEstado@{getEstado}}
+\index{getEstado@{getEstado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{getEstado()}{getEstado()}}
+{\footnotesize\ttfamily string Estado\+::get\+Estado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o estado. 
+
+Este método retorna o estado atual do objeto.
+
+\begin{DoxyReturn}{Returns}
+O estado atual. 
+\end{DoxyReturn}
+\Hypertarget{classEstado_aafb9477f0508a971eec89b6d0854b9c5}\label{classEstado_aafb9477f0508a971eec89b6d0854b9c5} 
+\index{Estado@{Estado}!setEstado@{setEstado}}
+\index{setEstado@{setEstado}!Estado@{Estado}}
+\doxysubsubsection{\texorpdfstring{setEstado()}{setEstado()}}
+{\footnotesize\ttfamily void Estado\+::set\+Estado (\begin{DoxyParamCaption}\item[{const string \&}]{estado }\end{DoxyParamCaption})}
+
+
+
+Define o estado. 
+
+Este método define o estado para o objeto. Antes de definir, o estado é validado para garantir que esteja na lista de estados válidos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em estado} & O novo estado. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/barbosa/unb/\+TP1-\/\+SS/\+Trabalho\+\_\+1/include/dominios\+\_\+h/Estado.\+h\item 
+/home/barbosa/unb/\+TP1-\/\+SS/\+Trabalho\+\_\+1/src/dominios\+\_\+cpp/Estado.\+cpp\end{DoxyCompactItemize}
