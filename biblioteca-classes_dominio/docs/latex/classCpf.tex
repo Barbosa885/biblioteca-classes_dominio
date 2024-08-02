@@ -1,0 +1,70 @@
+\doxysection{Cpf Class Reference}
+\hypertarget{classCpf}{}\label{classCpf}\index{Cpf@{Cpf}}
+
+
+Classe responsável pela representação de um CPF (Cadastro de Pessoa Física).  
+
+
+
+
+{\ttfamily \#include $<$Cpf.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classCpf_a581560b5c8c2f7bd3d509325b50c1e60}\label{classCpf_a581560b5c8c2f7bd3d509325b50c1e60} 
+{\bfseries Cpf} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrão da classe \doxylink{classCpf}{Cpf}. \end{DoxyCompactList}\item 
+\Hypertarget{classCpf_acc7d5f4653bc452046c20fc68d76e5ff}\label{classCpf_acc7d5f4653bc452046c20fc68d76e5ff} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Cpf} ()
+\begin{DoxyCompactList}\small\item\em Destrutor padrão da classe \doxylink{classCpf}{Cpf}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCpf_a9b04c39a66b909dd2d675d37ae532f2e}{set\+Cpf}} (const string \&cpf)
+\begin{DoxyCompactList}\small\item\em Define o CPF. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classCpf_a653a6fc70f3281104a15b0891cd5acdf}{get\+Cpf}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o CPF. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe responsável pela representação de um CPF (Cadastro de Pessoa Física). 
+
+Esta classe encapsula a lógica relacionada ao gerenciamento de CPFs, incluindo a validação do CPF e a manipulação de seus componentes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCpf_a653a6fc70f3281104a15b0891cd5acdf}\label{classCpf_a653a6fc70f3281104a15b0891cd5acdf} 
+\index{Cpf@{Cpf}!getCpf@{getCpf}}
+\index{getCpf@{getCpf}!Cpf@{Cpf}}
+\doxysubsubsection{\texorpdfstring{getCpf()}{getCpf()}}
+{\footnotesize\ttfamily string Cpf\+::get\+Cpf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o CPF. 
+
+Este método retorna o CPF atual do objeto.
+
+\begin{DoxyReturn}{Returns}
+O CPF atual. 
+\end{DoxyReturn}
+\Hypertarget{classCpf_a9b04c39a66b909dd2d675d37ae532f2e}\label{classCpf_a9b04c39a66b909dd2d675d37ae532f2e} 
+\index{Cpf@{Cpf}!setCpf@{setCpf}}
+\index{setCpf@{setCpf}!Cpf@{Cpf}}
+\doxysubsubsection{\texorpdfstring{setCpf()}{setCpf()}}
+{\footnotesize\ttfamily void Cpf\+::set\+Cpf (\begin{DoxyParamCaption}\item[{const string \&}]{cpf }\end{DoxyParamCaption})}
+
+
+
+Define o CPF. 
+
+Este método define o CPF para o objeto. Antes de definir, o CPF é validado para garantir que atenda aos critérios de validação.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cpf} & O novo CPF. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/barbosa/unb/\+TP1-\/\+SS/\+Trabalho\+\_\+1/include/dominios\+\_\+h/Cpf.\+h\item 
+/home/barbosa/unb/\+TP1-\/\+SS/\+Trabalho\+\_\+1/src/dominios\+\_\+cpp/Cpf.\+cpp\end{DoxyCompactItemize}
