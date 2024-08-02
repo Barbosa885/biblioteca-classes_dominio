@@ -75,6 +75,10 @@ class Data {
      * @return A data atual.
      */
     string getData() const;
+
+    friend std::istream& operator>>(std::istream& in, Data& data);
+
+    friend std::ostream& operator<<(std::ostream& out, const Data& data);
 };
 
 inline string Data::getData() const {

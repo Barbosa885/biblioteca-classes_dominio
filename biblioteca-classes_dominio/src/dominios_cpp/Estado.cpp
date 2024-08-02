@@ -30,3 +30,15 @@ void Estado::setEstado(const string& estado) {
   validar(estado);
   this->estado = estado;
 }
+
+// Definição do operador de extração
+std::istream& operator>>(std::istream& in, Estado& estado) {
+    in >> estado.estado;
+    return in;
+}
+
+// Definição do operador de inserção
+std::ostream& operator<<(std::ostream& out, const Estado& estado) {
+    out << estado.estado;
+    return out;
+}

@@ -48,3 +48,15 @@ void Data::setData(const string& data) {
   validar(data);
   this->data = data;
 }
+
+// Definição do operador de extração
+std::istream& operator>>(std::istream& in, Data& data) {
+    in >> data.data;
+    return in;
+}
+
+// Definição do operador de inserção
+std::ostream& operator<<(std::ostream& out, const Data& data) {
+    out << data.data;
+    return out;
+}

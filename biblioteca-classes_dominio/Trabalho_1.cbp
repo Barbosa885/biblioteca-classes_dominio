@@ -262,6 +262,7 @@
 		<Unit filename="docs/latex/longtable_doxygen.sty" />
 		<Unit filename="docs/latex/refman.tex" />
 		<Unit filename="docs/latex/tabu_doxygen.sty" />
+		<Unit filename="include/controladoras_h/CtrlAprPgtos.h" />
 		<Unit filename="include/dominios_h/CodigoPagamento.h" />
 		<Unit filename="include/dominios_h/CodigoTitulo.h" />
 		<Unit filename="include/dominios_h/Cpf.h" />
@@ -291,6 +292,7 @@
 		<Unit filename="include/testes_h/entidades/TUPagamento.h" />
 		<Unit filename="include/testes_h/entidades/TUTitulo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/controladoras_cpp/CtrlAprPgtos.cpp" />
 		<Unit filename="src/dominios_cpp/CodigoPagamento.cpp" />
 		<Unit filename="src/dominios_cpp/CodigoTitulo.cpp" />
 		<Unit filename="src/dominios_cpp/Cpf.cpp" />

@@ -7,9 +7,7 @@
 
 using namespace std;
 
-//-----------------------------------------------------------------------------------
-// Declaração de interface da camada de apresentação.
-// Aluna: Laíssa Soares - 22/2032982
+// Aluna: Laíssa Beatriz Soares da Silva - 22/2032982
 //-----------------------------------------------------------------------------------
 // ---------------------------------------IAA----------------------------------------
 // ----------------------------------------------------------------------------------
@@ -58,7 +56,7 @@ public:
  */
 class IAPagamentos {
 public:
-    virtual ~IAPagamento() = default;
+    virtual ~IAPagamentos() = default;
     /**
      * @brief Executa opera&ccedil;&otilde;es de pagamento usando o CPF fornecido.
      * @param cpf Refer&ecirc;ncia constante para o objeto Cpf do usu&aacute;rio.

@@ -18,7 +18,7 @@ using namespace std;
 class CodigoPagamento {
   private:
 
-    /** 
+    /**
      * @brief Atributo que armazena o código de pagamento.
      */
     string codigo_pagamento;
@@ -66,6 +66,12 @@ class CodigoPagamento {
      * @return O código de pagamento.
      */
     string getCodigo() const;
+
+    // Declaração do operador de extração como amigo da classe
+    friend std::istream& operator>>(std::istream& in, CodigoPagamento& codigo);
+
+    // Declaração do operador de inserção como amigo da classe
+    friend std::ostream& operator<<(std::ostream& out, const CodigoPagamento& codigo);
 };
 
 inline string CodigoPagamento::getCodigo() const{

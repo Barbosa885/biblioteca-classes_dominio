@@ -12,9 +12,7 @@
 
 using namespace std;
 
-//-----------------------------------------------------------------------------------
-// Declaração de interface da camada de serviços.
-// Aluna: Laíssa Soares - 22/2032982
+// Aluna: Laíssa Beatriz Soares da Silva - 22/2032982
 //-----------------------------------------------------------------------------------
 // ---------------------------------------ISA----------------------------------------
 // ----------------------------------------------------------------------------------
@@ -30,7 +28,7 @@ public:
      * @param senha Refer&ecirc;ncia constante para o objeto Senha do usuário.
      * @return 'true' se a autentica&ccedil;&atilde;o for bem-sucedida, 'false' caso contr&aacute;rio.
      */
-    virtual bool autenticar(const Cpf&, const Senha&) = 0
+    virtual bool autenticar(const Cpf&, const Senha&) = 0;
 };
 
 //-----------------------------------------------------------------------------------

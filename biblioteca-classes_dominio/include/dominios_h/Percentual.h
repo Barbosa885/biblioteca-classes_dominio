@@ -64,6 +64,12 @@ class Percentual {
      * @return O percentual atual.
      */
     float getPercentual() const;
+
+    // Declaração do operador de extração como amigo da classe
+    friend std::istream& operator>>(std::istream& in, Percentual& percentual);
+
+    // Declaração do operador de inserção como amigo da classe
+    friend std::ostream& operator<<(std::ostream& out, const Percentual& percentual);
 };
 
 inline float Percentual::getPercentual() const {

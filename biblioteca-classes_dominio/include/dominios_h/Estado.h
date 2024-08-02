@@ -67,6 +67,9 @@ class Estado {
      * @return O estado atual.
      */
     string getEstado() const;
+    friend std::istream& operator>>(std::istream& in, Estado& estado);
+
+    friend std::ostream& operator<<(std::ostream& out, const Estado& estado);
 };
 
 inline string Estado::getEstado() const {

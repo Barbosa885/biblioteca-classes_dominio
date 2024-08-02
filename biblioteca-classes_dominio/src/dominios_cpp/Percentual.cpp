@@ -25,3 +25,19 @@ void Percentual::setPercentual(float percentual) {
   validar(percentual);
   this->percentual = percentual;
 }
+
+// Definição do operador de extração
+std::istream& operator>>(std::istream& in, Percentual& percentual) {
+    float valor;
+    in >> valor;
+    if (in) {
+        percentual.setPercentual(valor);
+    }
+    return in;
+}
+
+// Definição do operador de inserção
+std::ostream& operator<<(std::ostream& out, const Percentual& percentual) {
+    out << percentual.percentual;
+    return out;
+}

@@ -24,7 +24,7 @@ void CodigoPagamento::validar(const string& codigo_pagamento){
       throw invalid_argument("Codigo de pagamento invalido");
     }
   }
-  
+
   // Verifica se o primeiro digito é diferente de 0
   if (codigo_pagamento[0] == '0'){
     throw invalid_argument("Codigo de pagamento invalido");
@@ -35,4 +35,16 @@ void CodigoPagamento::validar(const string& codigo_pagamento){
 void CodigoPagamento::setCodigo(const string& codigo_pagamento){
   validar(codigo_pagamento);
   this->codigo_pagamento = codigo_pagamento;
+}
+
+// Definição do operador de extração
+std::istream& operator>>(std::istream& in, CodigoPagamento& codigo) {
+    in >> codigo.codigo_pagamento;
+    return in;
+}
+
+// Definição do operador de inserção
+std::ostream& operator<<(std::ostream& out, const CodigoPagamento& codigo) {
+    out << codigo.codigo_pagamento;
+    return out;
 }
