@@ -1,13 +1,13 @@
 #include "../../include/persistencia_h/Conexaobanco.h"
 #include "../../include/sqlite/sqlite3.h"
 #include <stdexcept>
-#include <iostream> // Para depuração
+#include <iostream>
 #include <vector>
 
 Conexaobanco::Conexaobanco(const std::string& dbPath) : db(nullptr), dbPath(dbPath) {
-    std::cout << "Tentando abrir conexão com o banco de dados em: " << dbPath << std::endl; // Depuração
+    std::cout << "Tentando abrir conexão com o banco de dados em: " << dbPath << std::endl;
     openConnection();
-    inicializarBancoDeDados(); // Inicializa o banco de dados e cria tabelas, se necessário
+    inicializarBancoDeDados();
 }
 
 Conexaobanco::~Conexaobanco() {
@@ -15,9 +15,9 @@ Conexaobanco::~Conexaobanco() {
 }
 
 void Conexaobanco::openConnection() {
-    int result = sqlite3_open(dbPath.c_str(), &db); // Captura o resultado da tentativa de abrir a conexão
+    int result = sqlite3_open(dbPath.c_str(), &db);
     if (result != SQLITE_OK) {
-        std::cerr << "Erro ao tentar abrir o banco de dados: " << sqlite3_errmsg(db) << std::endl; // Detalhes do erro de conexão
+        std::cerr << "Erro ao tentar abrir o banco de dados: " << sqlite3_errmsg(db) << std::endl;
         throw std::runtime_error("Não foi possível abrir a conexão com o banco de dados.");
     } else {
         std::cout << "Conexão com o banco de dados estabelecida com sucesso." << std::endl;
@@ -36,7 +36,7 @@ void Conexaobanco::closeConnection() {
 }
 
 void Conexaobanco::inicializarBancoDeDados() {
-    const char* sqlCriacaoTabela =
+    const char* sqlCriacaoTabelaTitulo =
         "CREATE TABLE IF NOT EXISTS Titulo ("
         "codigo TEXT PRIMARY KEY NOT NULL, "
         "emissor TEXT NOT NULL, "
@@ -45,11 +45,27 @@ void Conexaobanco::inicializarBancoDeDados() {
         "vencimento TEXT NOT NULL, "
         "valor REAL NOT NULL);";
 
+    const char* sqlCriacaoTabelaConta =
+        "CREATE TABLE IF NOT EXISTS Conta ("
+        "numero TEXT PRIMARY KEY NOT NULL, "
+        "titular TEXT NOT NULL, "
+        "saldo REAL NOT NULL);";
+
+    const char* sqlCriacaoTabelaPagamento =
+        "CREATE TABLE IF NOT EXISTS Pagamento ("
+        "id INTEGER PRIMARY KEY AUTOINCREMENT, "
+        "codigoTitulo TEXT NOT NULL, "
+        "dataPagamento TEXT NOT NULL, "
+        "valorPago REAL NOT NULL, "
+        "FOREIGN KEY(codigoTitulo) REFERENCES Titulo(codigo));";
+
     try {
-        executarSQL(sqlCriacaoTabela);
-        std::cout << "Tabela Titulo criada ou já existe." << std::endl;
+        executarSQL(sqlCriacaoTabelaTitulo);
+        executarSQL(sqlCriacaoTabelaConta);
+        executarSQL(sqlCriacaoTabelaPagamento);
+        std::cout << "Tabelas criadas ou já existentes." << std::endl;
     } catch (const std::exception& e) {
-        std::cerr << "Erro ao criar tabela: " << e.what() << std::endl;
+        std::cerr << "Erro ao criar tabelas: " << e.what() << std::endl;
     }
 }
 
