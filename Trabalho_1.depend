@@ -256,3 +256,278 @@
 1714959353 /home/barbosa/unb/TP1-SS/Trabalho_1/include/testes_h/entidades/TUPagamento.h
 	"../../entidades_h/Pagamento.h"
 
+1722733412 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\main.cpp
+	"./include/testes_h/dominios/TUCodigoPagamento.h"
+	"./include/testes_h/dominios/TUSetor.h"
+	"./include/testes_h/dominios/TUEstado.h"
+	"./include/testes_h/dominios/TUNome.h"
+	"./include/testes_h/dominios/TUPercentual.h"
+	"./include/testes_h/dominios/TUDinheiro.h"
+	"./include/testes_h/dominios/TUCodigoTitulo.h"
+	"./include/testes_h/dominios/TUCpf.h"
+	"./include/testes_h/dominios/TUSenha.h"
+	"./include/testes_h/dominios/TUData.h"
+	"./include/testes_h/entidades/TUConta.h"
+	"./include/testes_h/entidades/TUTitulo.h"
+	"./include/testes_h/entidades/TUPagamento.h"
+	"./include/controladora_h/CtrlTitulo.h"
+	"./include/persistencia_h/TituloOAD.h"
+	"./include/servico_h/ServicoTitulo.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tucodigopagamento.h
+	"../../dominios_h/CodigoPagamento.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\codigopagamento.h
+	<stdexcept>
+	<iostream>
+	<string>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tusetor.h
+	"../../dominios_h/Setor.h"
+
+1722715801 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\setor.h
+	<iostream>
+	<vector>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tuestado.h
+	"../../dominios_h/Estado.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\estado.h
+	<stdexcept>
+	<iostream>
+	<vector>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tunome.h
+	"../../dominios_h/Nome.h"
+
+1722715657 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\nome.h
+	<iostream>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tupercentual.h
+	"../../dominios_h/Percentual.h"
+	<iostream>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\percentual.h
+	<iostream>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tudinheiro.h
+	"../../dominios_h/Dinheiro.h"
+
+1722716113 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\dinheiro.h
+	<iostream>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tucodigotitulo.h
+	"../../dominios_h/CodigoTitulo.h"
+
+1722715524 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\codigotitulo.h
+	<iostream>
+	<vector>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tucpf.h
+	"../../dominios_h/Cpf.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\cpf.h
+	<iostream>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tusenha.h
+	"../../dominios_h/Senha.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\senha.h
+	<iostream>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\dominios\tudata.h
+	"../../dominios_h/Data.h"
+
+1722715899 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\dominios_h\data.h
+	<iostream>
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\entidades\tuconta.h
+	"../../entidades_h/Conta.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\entidades_h\conta.h
+	"../dominios_h/Cpf.h"
+	"../dominios_h/Nome.h"
+	"../dominios_h/Senha.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\entidades\tutitulo.h
+	"../../entidades_h/Titulo.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\entidades_h\titulo.h
+	<iostream>
+	"../dominios_h/CodigoTitulo.h"
+	"../dominios_h/Nome.h"
+	"../dominios_h/Setor.h"
+	"../dominios_h/Data.h"
+	"../dominios_h/Dinheiro.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\entidades\tupagamento.h
+	"../../entidades_h/Pagamento.h"
+
+1722635118 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\entidades_h\pagamento.h
+	"../dominios_h/CodigoPagamento.h"
+	"../dominios_h/Data.h"
+	"../dominios_h/Percentual.h"
+	"../dominios_h/Estado.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\codigopagamento.cpp
+	"../../include/dominios_h/CodigoPagamento.h"
+
+1722715509 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\codigotitulo.cpp
+	"../../include/dominios_h/CodigoTitulo.h"
+	<cctype>
+	<stdexcept>
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\cpf.cpp
+	"../../include/dominios_h/Cpf.h"
+	<algorithm>
+	<cctype>
+	<regex>
+
+1722715907 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\data.cpp
+	"../../include/dominios_h/Data.h"
+	<regex>
+	<stdexcept>
+
+1722716103 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\dinheiro.cpp
+	"../../include/dominios_h/Dinheiro.h"
+	<stdexcept>
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\estado.cpp
+	"../../include/dominios_h/Estado.h"
+
+1722715665 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\nome.cpp
+	"../../include/dominios_h/Nome.h"
+	<sstream>
+	<stdexcept>
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\percentual.cpp
+	"../../include/dominios_h/Percentual.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\senha.cpp
+	"../../include/dominios_h/Senha.h"
+
+1722715789 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\dominios_cpp\setor.cpp
+	"../../include/dominios_h/Setor.h"
+	<algorithm>
+	<stdexcept>
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\entidades.cpp
+	"../include/entidades_h/Conta.h"
+	"../include/entidades_h/Titulo.h"
+	"../include/entidades_h/Pagamento.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tucodigopagamento.cpp
+	"../../../include/testes_h/dominios/TUCodigoPagamento.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tucodigotitulo.cpp
+	"../../../include/testes_h/dominios/TUCodigoTitulo.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tucpf.cpp
+	"../../../include/testes_h/dominios/TUCpf.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tudata.cpp
+	"../../../include/testes_h/dominios/TUData.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tudinheiro.cpp
+	"../../../include/testes_h/dominios/TUDinheiro.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tuestado.cpp
+	"../../../include/testes_h/dominios/TUEstado.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tunome.cpp
+	"../../../include/testes_h/dominios/TUNome.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tupercentual.cpp
+	"../../../include/testes_h/dominios/TUPercentual.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tusenha.cpp
+	"../../../include/testes_h/dominios/TUSenha.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\dominios\tusetor.cpp
+	"../../../include/testes_h/dominios/TUSetor.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\entidades\tuconta.cpp
+	"../../../include/testes_h/entidades/TUConta.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\entidades\tupagamento.cpp
+	"../../../include/testes_h/entidades/TUPagamento.h"
+
+1722635118 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\entidades\tutitulo.cpp
+	"../../../include/testes_h/entidades/TUTitulo.h"
+
+1722712532 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\servico_cpp\servicotitulo.cpp
+	"../../include/servico_h/ServicoTitulo.h"
+	<stdexcept>
+
+1722708760 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\servico_h\servicotitulo.h
+	"IServicoTitulo.h"
+	"../persistencia_h/TituloOAD.h"
+
+1722672625 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\servico_h\iservicotitulo.h
+	<vector>
+	"../entidades_h/Titulo.h"
+	"../dominios_h/CodigoTitulo.h"
+
+1722669641 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\persistencia_h\titulooad.h
+	<vector>
+	<string>
+	"Conexaobanco.h"
+	"../entidades_h/Titulo.h"
+
+1722730730 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\persistencia_h\conexaobanco.h
+	"../sqlite/sqlite3.h"
+	<string>
+	<vector>
+
+1716472267 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\sqlite\sqlite3.h
+	<stdarg.h>
+
+1722719527 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\controladora_cpp\ctrltitulo.cpp
+	"../../include/controladora_h/CtrlTitulo.h"
+	<iostream>
+
+1722709134 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\controladora_h\ctrltitulo.h
+	"../../include/servico_h/ServicoTitulo.h"
+	"../../include/dominios_h/CodigoTitulo.h"
+	"../../include/dominios_h/Nome.h"
+	"../../include/dominios_h/Setor.h"
+	"../../include/dominios_h/Data.h"
+	"../../include/dominios_h/Dinheiro.h"
+	"../../include/entidades_h/Titulo.h"
+
+1722732168 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\persistencia_cpp\conexaobanco.cpp
+	"../../include/persistencia_h/Conexaobanco.h"
+	"../../include/sqlite/sqlite3.h"
+	<stdexcept>
+	<iostream>
+	<vector>
+
+1722712313 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\persistencia_cpp\titulooad.cpp
+	"../../include/persistencia_h/TituloOAD.h"
+	<stdexcept>
+
+1722719544 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\controladoras\ctrltitulotest.cpp
+	"../../../include/testes_h/cotroladoras/TUCtrlTitulo.h"
+	<iostream>
+	<cassert>
+
+1722718364 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\cotroladoras\tuctrltitulo.h
+	"../../controladora_h/CtrlTitulo.h"
+	"../../servico_h/ServicoTitulo.h"
+
+1722721416 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\servicos\tuservicetitulo.cpp
+	"../../../include/testes_h/servicos/TUServiceTitulo.h"
+	<iostream>
+	<cassert>
+
+1722721018 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\servicos\tuservicetitulo.h
+	"../../servico_h/ServicoTitulo.h"
+
+1722731964 source:c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\src\testes_cpp\persistencia\tutitulooad.cpp
+	"../../../include/testes_h/persistencia/TituloOADTest.h"
+	<iostream>
+	<cassert>
+
+1722661309 c:\users\davib\onedrive\documentos\trabalho2-tp1\biblioteca-classes_dominio\include\testes_h\persistencia\titulooadtest.h
+	"../../persistencia_h/TituloOAD.h"
+

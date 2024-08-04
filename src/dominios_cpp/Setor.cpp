@@ -1,13 +1,20 @@
+// Setor.cpp
 #include "../../include/dominios_h/Setor.h"
+#include <algorithm>
+#include <stdexcept>
 
-Setor::Setor()
-{
-  //ctor
+using namespace std;
+
+Setor::Setor() {
+  // Construtor padrão
 }
 
-Setor::~Setor()
-{
-  //dtor
+Setor::Setor(const string& setor) {
+  setSetor(setor);
+}
+
+Setor::~Setor() {
+  // Destrutor
 }
 
 // Lista de setores válidos
@@ -21,32 +28,23 @@ const vector<string> Setor::SETORES = {
   "Pecuária",
   "Química e petroquímica",
   "Metalurgia e siderurgia",
-  "Mineração",
+  "Mineração"
 };
 
 // Método que verifica se o setor está presente na lista de setores válidos
-bool Setor::encontrarSetor(const string& setor){
-  // Verifica se o setor está presente na lista de setores válidos
-  for (int i = 0; i < SETORES.size(); i++){
-    // Se o setor estiver presente, retorna verdadeiro
-    if (setor == SETORES[i]) {
-      return true;
-    }
-  }
-  return false;
+bool Setor::encontrarSetor(const string& setor) {
+  return find(SETORES.begin(), SETORES.end(), setor) != SETORES.end();
 }
 
 // Método que valida o setor fornecido
-void Setor::validar(const string& setor){
-  // Verifica a resposta da função encontrarSetor
+void Setor::validar(const string& setor) {
   if (!encontrarSetor(setor)) {
-    throw invalid_argument("Setor invalido");
-  } 
-  return;
+    throw invalid_argument("Setor inválido");
+  }
 }
 
 // Método que define o setor
-void Setor::setSetor(const string& setor){
+void Setor::setSetor(const string& setor) {
   validar(setor);
   this->setor = setor;
 }

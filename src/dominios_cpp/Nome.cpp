@@ -1,14 +1,20 @@
+// Nome.cpp
 #include "../../include/dominios_h/Nome.h"
 #include <sstream>
+#include <stdexcept>
 
 using namespace std;
 
-Nome::Nome(){
-  //ctor
+Nome::Nome() {
+  // Construtor padrão
 }
 
-Nome::~Nome(){
-  //dtor
+Nome::Nome(const string& nome) {
+  setNome(nome);
+}
+
+Nome::~Nome() {
+  // Destrutor
 }
 
 // Método que valida o nome
@@ -25,7 +31,7 @@ void Nome::validar(const string& nome) {
     }
 
     // Verifica se o termo possui entre 3 e 10 caracteres
-    if (termo.length() < 3 || termo.length() > 10) {
+    if (termo.length() < NOME_LEN_MIN || termo.length() > NOME_LEN_MAX) {
       throw invalid_argument("Nome inválido: cada termo deve ter entre 3 e 10 caracteres.");
     }
 
@@ -33,7 +39,6 @@ void Nome::validar(const string& nome) {
     if (!isupper(termo[0])) {
       throw invalid_argument("Nome inválido: o primeiro caractere de cada termo deve ser maiúsculo.");
     }
-
 
     // Verifica se o termo possui apenas letras
     for (char c : termo) {

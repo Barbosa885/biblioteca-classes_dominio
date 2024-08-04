@@ -1,4 +1,5 @@
-#ifndef NOME_H 
+// Nome.h
+#ifndef NOME_H
 #define NOME_H
 
 #include <iostream>
@@ -18,22 +19,17 @@ class Nome {
     /**
      * @brief Constante que representa o comprimento máximo permitido para o nome.
      */
-    const static int NOME_LEN_MAX = 10;
+    static const int NOME_LEN_MAX = 10;
 
     /**
      * @brief Constante que representa o comprimento mínimo permitido para o nome.
      */
-    const static int NOME_LEN_MIN = 3;
+    static const int NOME_LEN_MIN = 3;
 
     /**
      * @brief Armazena o nome (termo 1).
      */
     string nome;
-
-    /**
-     * @brief Armazena o sobrenome ou nome composto (termo 2).
-     */
-    string sobrenome = "";
 
     /**
      * @brief Valida o nome fornecido.
@@ -55,6 +51,12 @@ class Nome {
      * @brief Construtor padrão da classe Nome.
      */
     Nome();
+
+    /**
+     * @brief Construtor com parâmetro da classe Nome.
+     * @param nome Nome inicial a ser atribuído ao objeto.
+     */
+    Nome(const string& nome);
 
     /**
      * @brief Destrutor padrão da classe Nome.

@@ -1,3 +1,4 @@
+// Dinheiro.h
 #ifndef DINHEIRO_H
 #define DINHEIRO_H
 
@@ -39,6 +40,12 @@ class Dinheiro {
      * @brief Construtor padrão da classe Dinheiro.
      */
     Dinheiro();
+
+    /**
+     * @brief Construtor com parâmetro para inicializar o valor.
+     * @param valor Valor inicial da quantia em dinheiro.
+     */
+    Dinheiro(float valor);
 
     /**
      * @brief Destrutor padrão da classe Dinheiro.

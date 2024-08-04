@@ -1,3 +1,4 @@
+// CodigoTitulo.h
 #ifndef CODIGO_TITULO_H
 #define CODIGO_TITULO_H
 
@@ -16,8 +17,7 @@ using namespace std;
  */
 class CodigoTitulo {
   private:
-
-    /** 
+    /**
      * @brief Atributo que armazena o código de título.
      */
     string codigoTitulo;
@@ -32,7 +32,7 @@ class CodigoTitulo {
      * @param codigoTitulo O código de título a ser validado.
      * @throw invalid_argument caso o código de título seja inválido.
      */
-    void validar(string codigoTitulo);
+    void validar(const string& codigoTitulo);
 
     /**
      * @brief Constante que armazena os títulos válidos pre-definidos.
@@ -44,12 +44,17 @@ class CodigoTitulo {
      */
     static const int TAMANHO_MAX = 11;
 
-  public :
-
+  public:
     /**
      * @brief Construtor padrão da classe.
      */
     CodigoTitulo();
+
+    /**
+     * @brief Construtor que inicializa o código do título.
+     * @param codigo O código de título a ser atribuído.
+     */
+    CodigoTitulo(const string& codigo);
 
     /**
      * @brief Destrutor padrão da classe.
@@ -61,7 +66,7 @@ class CodigoTitulo {
      *
      * @param codigoTitulo O código de título a ser atribuído.
      */
-    void setCodigoTitulo(string codigoTitulo);
+    void setCodigoTitulo(const string& codigoTitulo);
 
     /**
      * @brief Método responsável por recuperar o código de título.

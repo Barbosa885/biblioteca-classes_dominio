@@ -1,3 +1,4 @@
+// Setor.h
 #ifndef SETOR_H
 #define SETOR_H
 
@@ -21,7 +22,7 @@ class Setor {
      *
      * Esta lista contém os setores que são considerados válidos.
      */
-    const static vector<string> SETORES;
+    static const vector<string> SETORES;
 
     /**
      * @brief Armazena o setor.
@@ -52,6 +53,12 @@ class Setor {
      * @brief Construtor padrão da classe Setor.
      */
     Setor();
+
+    /**
+     * @brief Construtor com parâmetro da classe Setor.
+     * @param setor Setor inicial a ser atribuído ao objeto.
+     */
+    Setor(const string& setor);
 
     /**
      * @brief Destrutor padrão da classe Setor.

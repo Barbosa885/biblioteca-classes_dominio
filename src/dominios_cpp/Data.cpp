@@ -1,17 +1,30 @@
+// Data.cpp
 #include "../../include/dominios_h/Data.h"
 #include <regex>
-
-Data::Data() {
-  // ctor
-}
-
-Data::~Data() {
-  // dtor
-}
+#include <stdexcept>
 
 using namespace std;
 
+Data::Data() {
+  // Construtor padrão
+}
 
+Data::Data(const string& data) {
+  setData(data);
+}
+
+Data::~Data() {
+  // Destrutor
+}
+
+// Valida o formato da data
+bool Data::validarFormato(const string& data) {
+  // Regex para formato DD-MM-AAAA
+  regex formato("^[0-9]{2}-[0-9]{2}-[0-9]{4}$");
+  return regex_match(data, formato);
+}
+
+// Método que valida a data fornecida
 void Data::validar(const string& data) {
   // Verifica se a data está no formato correto
   if (!validarFormato(data)) {
@@ -29,21 +42,19 @@ void Data::validar(const string& data) {
   }
 
   // Considera anos bissextos
-  if (ano % 4 == 0 && (ano % 100!= 0 || ano % 400 == 0)) {
-    if (mes == 2 && dia > 29) {
-      throw invalid_argument("Data inválida: data inexistente");
+  bool isBissexto = (ano % 4 == 0 && (ano % 100 != 0 || ano % 400 == 0));
+  if (mes == 2) {
+    if (isBissexto && dia > 29) {
+      throw invalid_argument("Data inválida: fevereiro tem no máximo 29 dias em anos bissextos");
+    } else if (!isBissexto && dia > 28) {
+      throw invalid_argument("Data inválida: fevereiro tem no máximo 28 dias em anos não bissextos");
     }
-  } else if (mes == 2 && dia > 28) {
-    throw invalid_argument("Data inválida: data inexistente");
+  } else if ((mes == 4 || mes == 6 || mes == 9 || mes == 11) && dia > 30) {
+    throw invalid_argument("Data inválida: o mês especificado tem no máximo 30 dias");
   }
 }
 
-// Método que valida o formato da data
-bool Data::validarFormato(const string& data) {
-  regex formato("^[0-9]{2}-[0-9]{2}-[0-9]{4}$");
-  return regex_match(data, formato);
-}
-
+// Define a data após validação
 void Data::setData(const string& data) {
   validar(data);
   this->data = data;

@@ -1,3 +1,4 @@
+// Data.h
 #ifndef DATA_H
 #define DATA_H
 
@@ -46,11 +47,17 @@ class Data {
      */
     bool validarFormato(const string& data);
 
-  public :
+  public:
     /**
      * @brief Construtor padrão da classe Data.
      */
     Data();
+
+    /**
+     * @brief Construtor com parâmetro da classe Data.
+     * @param data Data inicial a ser atribuída ao objeto.
+     */
+    Data(const string& data);
 
     /**
      * @brief Destrutor padrão da classe Data.
