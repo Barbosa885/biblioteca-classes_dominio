@@ -41,7 +41,10 @@ class CodigoPagamento {
     /**
      * @brief Construtor padrão da classe.
      */
-    CodigoPagamento();
+    CodigoPagamento() = default;
+    explicit CodigoPagamento(const string& codigo) : codigo_pagamento(codigo) {
+        validar(codigo);
+    }
 
     /**
      * @brief Destrutor padrão da classe.

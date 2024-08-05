@@ -2,9 +2,9 @@
 
 using namespace std;
 
-Estado::Estado(){
-  //ctor
-}
+//Estado::Estado(){
+//  //ctor
+//}
 
 Estado::~Estado(){
   //dtor

@@ -1,9 +1,9 @@
 #include "../../include/dominios_h/CodigoPagamento.h"
 
-CodigoPagamento::CodigoPagamento()
-{
-  //ctor
-}
+//CodigoPagamento::CodigoPagamento()
+//{
+//  //ctor
+//}
 
 CodigoPagamento::~CodigoPagamento()
 {

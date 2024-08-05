@@ -50,7 +50,10 @@ class Data {
     /**
      * @brief Construtor padrão da classe Data.
      */
-    Data();
+    Data() = default;
+    explicit Data(const string& data) : data(data) {
+        validar(data);
+    }
 
     /**
      * @brief Destrutor padrão da classe Data.

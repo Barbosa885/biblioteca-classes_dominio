@@ -1,9 +1,9 @@
 #include "../../include/dominios_h/Data.h"
 #include <regex>
 
-Data::Data() {
-  // ctor
-}
+//Data::Data() {
+//  // ctor
+//}
 
 Data::~Data() {
   // dtor

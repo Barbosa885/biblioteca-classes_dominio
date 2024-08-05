@@ -1,8 +1,8 @@
 #ifndef CONTROLADORASPAGAMENTOS_H_INCLUDED
 #define CONTROLADORASPAGAMENTOS_H_INCLUDED
 
-#include "../interfaces_h/InterfacesApresentacao.h"
-#include "../interfaces_h/InterfacesServicos.h"
+#include "../../interfaces_h/InterfacesApresentacao.h"
+#include "../../interfaces_h/InterfacesServicos.h"
 
 // Aluna: Laíssa Beatriz Soares da Silva - 22/2032982
 
@@ -17,4 +17,3 @@ public:
 };
 
 #endif // CONTROLADORASPAGAMENTOS_H_INCLUDED
-

@@ -1,7 +1,4 @@
-#include "../../include/controladoras_h/CtrlAprPgtos.h"
-#include "../../include/dominios_h/CodigoPagamento.h"
-#include "../../include/entidades_h/Pagamento.h"
-#include <iostream>
+#include "../../../include/controladoras_h/Apresentacao/CtrlAprPgtos.h"
 
 using namespace std;
 
@@ -18,30 +15,30 @@ void CtrlAprPagamentos::executar(const Cpf& cpf) {
     cout << "Opcao: ";
     cin >> opcao;
 
-    CodigoPagamento codigoPagamento;
+    CodigoPagamento codigo;
     Pagamento pagamento;
-    Data dataPagamento;
-    Percentual percentualPagamento;
-    Estado estadoPagamento;
+    Data data;
+    Percentual percentual;
+    Estado estado;
 
     switch (opcao) {
         case 1:
             // Criação de pagamento
             cout << "Digite o código do pagamento: ";
-            cin >> codigoPagamento;
-            pagamento.setCodigoPagamento(codigoPagamento);
+            cin >> codigo;
+            pagamento.setCodigoPagamento(codigo);
 
             cout << "Digite a data do pagamento: ";
-            cin >> dataPagamento;
-            pagamento.setData(dataPagamento);
+            cin >> data;
+            pagamento.setData(data);
 
             cout << "Digite o percentual do pagamento: ";
-            cin >> percentualPagamento;
-            pagamento.setPercentual(percentualPagamento);
+            cin >> percentual;
+            pagamento.setPercentual(percentual);
 
             cout << "Digite o estado do pagamento: ";
-            cin >> estadoPagamento;
-            pagamento.setEstado(estadoPagamento);
+            cin >> estado;
+            pagamento.setEstado(estado);
 
             if (servicoPagamentos->criar(pagamento)) {
                 cout << "Pagamento criado com sucesso!" << endl;
@@ -53,8 +50,8 @@ void CtrlAprPagamentos::executar(const Cpf& cpf) {
         case 2:
             // Leitura de pagamento
             cout << "Digite o código do pagamento: ";
-            cin >> codigoPagamento;
-            pagamento.setCodigoPagamento(codigoPagamento);
+            cin >> codigo;
+            pagamento.setCodigoPagamento(codigo);
             if (servicoPagamentos->ler(&pagamento)) {
 
                 cout << "Código: " << pagamento.getCodigoPagamento() << endl;
@@ -72,20 +69,20 @@ void CtrlAprPagamentos::executar(const Cpf& cpf) {
         case 3:
             // Atualização de pagamento
             cout << "Digite o código do pagamento: ";
-            cin >> codigoPagamento;
-            pagamento.setCodigoPagamento(codigoPagamento);
+            cin >> codigo;
+            pagamento.setCodigoPagamento(codigo);
 
             cout << "Digite a data do pagamento: ";
-            cin >> dataPagamento;
-            pagamento.setData(dataPagamento);
+            cin >> data;
+            pagamento.setData(data);
 
             cout << "Digite o percentual do pagamento: ";
-            cin >> percentualPagamento;
-            pagamento.setPercentual(percentualPagamento);
+            cin >> percentual;
+            pagamento.setPercentual(percentual);
 
             cout << "Digite o estado do pagamento: ";
-            cin >> estadoPagamento;
-            pagamento.setEstado(estadoPagamento);
+            cin >> estado;
+            pagamento.setEstado(estado);
 
             if (servicoPagamentos->atualizar(pagamento)) {
                 cout << "Pagamento atualizado com sucesso!" << endl;
@@ -97,8 +94,8 @@ void CtrlAprPagamentos::executar(const Cpf& cpf) {
         case 4:
             // Exclusão de pagamento
             cout << "Digite o código do pagamento: ";
-            cin >> codigoPagamento;
-            if (servicoPagamentos->excluir(codigoPagamento)) {
+            cin >> codigo;
+            if (servicoPagamentos->excluir(codigo)) {
                 cout << "Pagamento excluído com sucesso!" << endl;
             } else {
                 cout << "Erro ao excluir pagamento." << endl;
@@ -107,11 +104,10 @@ void CtrlAprPagamentos::executar(const Cpf& cpf) {
 
         // verificar se isso aqui faz sentido
         case 5:
-            break;
+            return;
 
         default:
             cout << "Opcao invalida!" << endl;
             break;
     }
 }
-

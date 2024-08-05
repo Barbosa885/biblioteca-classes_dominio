@@ -42,7 +42,10 @@ class Estado {
     /**
      * @brief Construtor padrão da classe Estado.
      */
-    Estado();
+    Estado() = default;
+    explicit Estado(const string& estado) : estado(estado) {
+        validar(estado);
+    }
 
     /**
      * @brief Destrutor padrão da classe Estado.

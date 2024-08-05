@@ -39,7 +39,10 @@ class Percentual {
     /**
      * @brief Construtor padrão da classe Percentual.
      */
-    Percentual();
+    Percentual() = default;
+    explicit Percentual(float percentual) : percentual(percentual) {
+        validar(percentual);
+    }
 
     /**
      * @brief Destrutor padrão da classe Percentual.

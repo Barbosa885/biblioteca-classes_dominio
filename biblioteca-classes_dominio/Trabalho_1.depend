@@ -256,7 +256,7 @@
 1714959353 /home/barbosa/unb/TP1-SS/Trabalho_1/include/testes_h/entidades/TUPagamento.h
 	"../../entidades_h/Pagamento.h"
 
-1722555845 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\main.cpp
+1722714415 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\main.cpp
 	"./include/testes_h/dominios/TUCodigoPagamento.h"
 	"./include/testes_h/dominios/TUSetor.h"
 	"./include/testes_h/dominios/TUEstado.h"
@@ -274,7 +274,7 @@
 1722555845 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\dominios\tucodigopagamento.h
 	"../../dominios_h/CodigoPagamento.h"
 
-1722619604 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\codigopagamento.h
+1722816009 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\codigopagamento.h
 	<stdexcept>
 	<iostream>
 	<string>
@@ -289,7 +289,7 @@
 1722555845 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\dominios\tuestado.h
 	"../../dominios_h/Estado.h"
 
-1722619533 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\estado.h
+1722816163 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\estado.h
 	<stdexcept>
 	<iostream>
 	<vector>
@@ -304,7 +304,7 @@
 	"../../dominios_h/Percentual.h"
 	<iostream>
 
-1722619747 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\percentual.h
+1722816132 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\percentual.h
 	<iostream>
 
 1722555845 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\dominios\tudinheiro.h
@@ -335,7 +335,7 @@
 1722555845 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\dominios\tudata.h
 	"../../dominios_h/Data.h"
 
-1722619492 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\data.h
+1722816103 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\dominios_h\data.h
 	<iostream>
 
 1722555845 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\entidades\tuconta.h
@@ -366,7 +366,7 @@
 	"../dominios_h/Percentual.h"
 	"../dominios_h/Estado.h"
 
-1722618612 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\codigopagamento.cpp
+1722814826 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\codigopagamento.cpp
 	"../../include/dominios_h/CodigoPagamento.h"
 
 1722555845 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\codigotitulo.cpp
@@ -379,21 +379,21 @@
 	<cctype>
 	<regex>
 
-1722618754 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\data.cpp
+1722814826 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\data.cpp
 	"../../include/dominios_h/Data.h"
 	<regex>
 
 1722555845 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\dinheiro.cpp
 	"../../include/dominios_h/Dinheiro.h"
 
-1722555845 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\estado.cpp
+1722814826 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\estado.cpp
 	"../../include/dominios_h/Estado.h"
 
 1722555845 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\nome.cpp
 	"../../include/dominios_h/Nome.h"
 	<sstream>
 
-1722617765 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\percentual.cpp
+1722814826 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\percentual.cpp
 	"../../include/dominios_h/Percentual.h"
 
 1722555845 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\dominios_cpp\senha.cpp
@@ -445,4 +445,62 @@
 
 1722555845 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\testes_cpp\entidades\tutitulo.cpp
 	"../../../include/testes_h/entidades/TUTitulo.h"
+
+1722625746 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\controladoras_cpp\ctrlaprpgtos.cpp
+	"../../include/controladoras_h/CtrlAprPgtos.h"
+
+1722625322 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\controladoras_h\ctrlaprpgtos.h
+	"../interfaces_h/InterfacesApresentacao.h"
+	"../interfaces_h/InterfacesServicos.h"
+
+1722713273 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\interfaces_h\interfacesapresentacao.h
+	"../dominios_h/Cpf.h"
+
+1722713338 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\interfaces_h\interfacesservicos.h
+	"../entidades_h/Pagamento.h"
+
+1722627657 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\stubs_h\stubs.h
+	"../interfaces_h/InterfacesApresentacao.h"
+	"../interfaces_h/InterfacesServicos.h"
+	<stdexcept>
+	<iostream>
+
+1722816910 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\controladoras_cpp\servicos\ctrlserpgtos.cpp
+	"../../../include/controladoras_h/Servicos/CtrlSerPgtos.h"
+
+1722816823 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\controladoras_h\servicos\ctrlserpgtos.h
+	"../../interfaces_h/InterfacesServicos.h"
+	"../../persistencia_h/PagamentosOAD.h"
+
+1722714957 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\controladoras_cpp\apresentacao\ctrlaprpgtos.cpp
+	"../../../include/controladoras_h/Apresentacao/CtrlAprPgtos.h"
+
+1722715010 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\controladoras_h\apresentacao\ctrlaprpgtos.h
+	"../../interfaces_h/InterfacesApresentacao.h"
+	"../../interfaces_h/InterfacesServicos.h"
+
+1722813196 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\persistencia_cpp\conexaobanco.cpp
+	"../../include/persistencia_h/Conexaobanco.h"
+	"../../include/sqlite/sqlite3.h"
+	<stdexcept>
+	<iostream>
+	<vector>
+
+1722811857 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\persistencia_h\conexaobanco.h
+	"../sqlite/sqlite3.h"
+	<string>
+	<vector>
+
+1722811886 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\sqlite\sqlite3.h
+	<stdarg.h>
+
+1722814213 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\persistencia_h\pagamentosoad.h
+	<vector>
+	<string>
+	"Conexaobanco.h"
+	"../entidades_h/Pagamento.h"
+
+1722815477 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\persistencia_cpp\pagamentosoad.cpp
+	"../../include/persistencia_h/PagamentosOAD.h"
+	<stdexcept>
 

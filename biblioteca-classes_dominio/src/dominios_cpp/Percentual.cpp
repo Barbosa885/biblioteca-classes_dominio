@@ -1,9 +1,9 @@
 #include "../../include/dominios_h/Percentual.h"
 
-Percentual::Percentual()
-{
-  //ctor
-}
+//Percentual::Percentual()
+//{
+//  //ctor
+//}
 
 Percentual::~Percentual()
 {

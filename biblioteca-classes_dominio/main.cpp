@@ -1,4 +1,4 @@
-// Dominios 
+// Dominios
 #include "./include/testes_h/dominios/TUCodigoPagamento.h"
 #include "./include/testes_h/dominios/TUSetor.h"
 #include "./include/testes_h/dominios/TUEstado.h"
@@ -14,6 +14,11 @@
 #include "./include/testes_h/entidades/TUConta.h"
 #include "./include/testes_h/entidades/TUTitulo.h"
 #include "./include/testes_h/entidades/TUPagamento.h"
+
+// Módulos
+#include "./include/controladoras_h/Apresentacao/CtrlAprPgtos.h"
+#include "./include/controladoras_h/Servicos/CtrlSerPgtos.h"
+#include "./include/persistencia_h/PagamentosOAD.h"
 
 using namespace std;
 
@@ -149,5 +154,21 @@ int main() {
       break;
   }
 
-  return 0;
+  try {
+        // Inicialização dos componentes para o controle de Pagamentos
+        PagamentoOAD* oadPagamento = new PagamentoOAD("./banco.db");
+        CtrlSerPagamentos* servico_pgto = new CtrlSerPagamentos(oadPagamento);
+        CtrlAprPagamentos CtrlAprPagamentos(servico_pgto);
+
+        // Executa o menu de gerenciamento de Pagamentos
+        CtrlAprPagamentos.executar();
+
+        // Liberação de recursos
+        delete servico_pgto;
+        delete oadPagamento;
+    } catch (const std::exception& e) {
+        cerr << "Erro durante a execução: " << e.what() << endl;
+    }
+
+    return 0;
 }
