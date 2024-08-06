@@ -8,10 +8,19 @@
 
 using namespace std;
 
+/**
+ * @class CntrlSAutenticacao
+ * @brief Classe controladora para o serviço de autenticação que implementa a interface ISAutenticacao.
+ */
 class CntrlSAutenticacao : public ISAutenticacao {
-  public:
+public:
+    /**
+     * @brief Método para autenticar um usuário.
+     * @param cpf CPF do usuário.
+     * @param senha Senha do usuário.
+     * @return true se a autenticação foi bem-sucedida, false caso contrário.
+     */
     bool autenticar(Cpf, Senha);
 };
-
 
 #endif // CNTRLAUTENTICACAO_H

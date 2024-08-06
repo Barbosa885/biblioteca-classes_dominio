@@ -1,13 +1,13 @@
-#include "../../include/controladoras_h/CntrlAContas.h"
-#include "../../include/controladoras_h/CntrlAAutenticacao.h"
-#include "../../include/controladoras_h/CntrlIU.h"
-#include "../../include/controladoras_h/CntrlSAutenticacao.h"
-#include "../../include/interfaces_h/servico/ISAutenticacao.h"
-#include "../../include/interfaces_h/servico/ISContas.h"
-#include "../../include/interfaces_h/apresentacao/IAAutenticacao.h"
-#include "../../include/interfaces_h/apresentacao/IAContas.h"
-#include "../../include/Containers.h"
-#include "../../include/entidades_h/Conta.h"
+#include "../include/controladoras_h/CntrlAContas.h"
+#include "../include/controladoras_h/CntrlAAutenticacao.h"
+#include "../include/controladoras_h/CntrlIU.h"
+#include "../include/controladoras_h/CntrlSAutenticacao.h"
+#include "../include/interfaces_h/servico/ISAutenticacao.h"
+#include "../include/interfaces_h/servico/ISContas.h"
+#include "../include/interfaces_h/apresentacao/IAAutenticacao.h"
+#include "../include/interfaces_h/apresentacao/IAContas.h"
+#include "../include/Containers.h"
+#include "../include/entidades_h/Conta.h"
 
 
  #include <iostream>
@@ -329,7 +329,7 @@ bool CntrIAContas::executar(Cpf cpf) {
 
 
 //-------------------------------------------------------------------//
-bool CntrlContas::criarContas(Conta conta) {
+bool CntrlSContas::criarConta(Conta conta) {
     ContainerConta *conConta;
     conConta = ContainerConta::getInstancia();
 
@@ -337,21 +337,21 @@ bool CntrlContas::criarContas(Conta conta) {
 
 }
 
-bool CntrlContas::visualizar(Conta* conta) {
+bool CntrlSContas::visualizar(Conta* conta) {
     ContainerConta *conConta;
 
     conConta = ContainerConta::getInstancia();
     return conConta->existe(conta);
 }
 
-bool CntrlContas::editar(Conta conta) {
+bool CntrlSContas::editar(Conta conta) {
     ContainerConta *conConta;
     conConta = ContainerConta::getInstancia();
 
     return conConta->editar(conta);
 }
 
-bool CntrlContas::excluir(Cpf cpf) {
+bool CntrlSContas::excluir(Cpf cpf) {
     ContainerConta *conConta;
     conConta = ContainerConta::getInstancia();
 
