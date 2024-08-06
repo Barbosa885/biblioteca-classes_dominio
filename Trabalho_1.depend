@@ -256,3 +256,221 @@
 1714959353 /home/barbosa/unb/TP1-SS/Trabalho_1/include/testes_h/entidades/TUPagamento.h
 	"../../entidades_h/Pagamento.h"
 
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/CodigoPagamento.cpp
+	"../../include/dominios_h/CodigoPagamento.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/CodigoPagamento.h
+	<stdexcept>
+	<iostream>
+	<string>
+
+1722900675 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/CodigoTitulo.cpp
+	"../../include/dominios_h/CodigoTitulo.h"
+	<cctype>
+
+1722900675 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/CodigoTitulo.h
+	<iostream>
+	<vector>
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Cpf.cpp
+	"../../include/dominios_h/Cpf.h"
+	<algorithm>
+	<cctype>
+	<regex>
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Cpf.h
+	<iostream>
+
+1722900675 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Data.cpp
+	"../../include/dominios_h/Data.h"
+	<regex>
+
+1722900675 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Data.h
+	<iostream>
+
+1722900675 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Dinheiro.cpp
+	"../../include/dominios_h/Dinheiro.h"
+
+1722900675 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Dinheiro.h
+	<iostream>
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Estado.cpp
+	"../../include/dominios_h/Estado.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Estado.h
+	<stdexcept>
+	<iostream>
+	<vector>
+
+1722900675 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Nome.cpp
+	"../../include/dominios_h/Nome.h"
+	<sstream>
+
+1722900675 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Nome.h
+	<iostream>
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Percentual.cpp
+	"../../include/dominios_h/Percentual.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Percentual.h
+	<iostream>
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Senha.cpp
+	"../../include/dominios_h/Senha.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Senha.h
+	<iostream>
+
+1722900675 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/dominios_cpp/Setor.cpp
+	"../../include/dominios_h/Setor.h"
+
+1722900675 /home/barbosa/unb/TP1-SS/Trabalho_2/include/dominios_h/Setor.h
+	<iostream>
+	<vector>
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/entidades.cpp
+	"../include/entidades_h/Conta.h"
+	"../include/entidades_h/Titulo.h"
+	"../include/entidades_h/Pagamento.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/entidades_h/Conta.h
+	"../dominios_h/Cpf.h"
+	"../dominios_h/Nome.h"
+	"../dominios_h/Senha.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/entidades_h/Titulo.h
+	<iostream>
+	"../dominios_h/CodigoTitulo.h"
+	"../dominios_h/Nome.h"
+	"../dominios_h/Setor.h"
+	"../dominios_h/Data.h"
+	"../dominios_h/Dinheiro.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/entidades_h/Pagamento.h
+	"../dominios_h/CodigoPagamento.h"
+	"../dominios_h/Data.h"
+	"../dominios_h/Percentual.h"
+	"../dominios_h/Estado.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUCodigoPagamento.cpp
+	"../../../include/testes_h/dominios/TUCodigoPagamento.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUCodigoPagamento.h
+	"../../dominios_h/CodigoPagamento.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUCodigoTitulo.cpp
+	"../../../include/testes_h/dominios/TUCodigoTitulo.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUCodigoTitulo.h
+	"../../dominios_h/CodigoTitulo.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUCpf.cpp
+	"../../../include/testes_h/dominios/TUCpf.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUCpf.h
+	"../../dominios_h/Cpf.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUData.cpp
+	"../../../include/testes_h/dominios/TUData.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUData.h
+	"../../dominios_h/Data.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUDinheiro.cpp
+	"../../../include/testes_h/dominios/TUDinheiro.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUDinheiro.h
+	"../../dominios_h/Dinheiro.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUEstado.cpp
+	"../../../include/testes_h/dominios/TUEstado.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUEstado.h
+	"../../dominios_h/Estado.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUNome.cpp
+	"../../../include/testes_h/dominios/TUNome.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUNome.h
+	"../../dominios_h/Nome.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUPercentual.cpp
+	"../../../include/testes_h/dominios/TUPercentual.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUPercentual.h
+	"../../dominios_h/Percentual.h"
+	<iostream>
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUSenha.cpp
+	"../../../include/testes_h/dominios/TUSenha.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUSenha.h
+	"../../dominios_h/Senha.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/dominios/TUSetor.cpp
+	"../../../include/testes_h/dominios/TUSetor.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/dominios/TUSetor.h
+	"../../dominios_h/Setor.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/entidades/TUConta.cpp
+	"../../../include/testes_h/entidades/TUConta.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/entidades/TUConta.h
+	"../../entidades_h/Conta.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/entidades/TUPagamento.cpp
+	"../../../include/testes_h/entidades/TUPagamento.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/entidades/TUPagamento.h
+	"../../entidades_h/Pagamento.h"
+
+1722639427 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/testes_cpp/entidades/TUTitulo.cpp
+	"../../../include/testes_h/entidades/TUTitulo.h"
+
+1722639427 /home/barbosa/unb/TP1-SS/Trabalho_2/include/testes_h/entidades/TUTitulo.h
+	"../../entidades_h/Titulo.h"
+
+1722883113 source:/home/barbosa/unb/TP1-SS/Trabalho_2/main.cpp
+	"./include/testes_h/dominios/TUCodigoPagamento.h"
+	"./include/testes_h/dominios/TUSetor.h"
+	"./include/testes_h/dominios/TUEstado.h"
+	"./include/testes_h/dominios/TUNome.h"
+	"./include/testes_h/dominios/TUPercentual.h"
+	"./include/testes_h/dominios/TUDinheiro.h"
+	"./include/testes_h/dominios/TUCodigoTitulo.h"
+	"./include/testes_h/dominios/TUCpf.h"
+	"./include/testes_h/dominios/TUSenha.h"
+	"./include/testes_h/dominios/TUData.h"
+	"./include/testes_h/entidades/TUConta.h"
+	"./include/testes_h/entidades/TUTitulo.h"
+	"./include/testes_h/entidades/TUPagamento.h"
+
+1722902224 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/Containers.cpp
+	"../include/Containers.h"
+	"../include/dominios_h/CodigoTitulo.h"
+
+1722902307 /home/barbosa/unb/TP1-SS/Trabalho_2/include/Containers.h
+	"./dominios_h/Cpf.h"
+	"./dominios_h/CodigoTitulo.h"
+	"./dominios_h/CodigoPagamento.h"
+	"./entidades_h/Titulo.h"
+	"./entidades_h/Conta.h"
+	"./entidades_h/Pagamento.h"
+	<map>
+	<vector>
+
+1722902641 source:/home/barbosa/unb/TP1-SS/Trabalho_2/src/Stubs.cpp
+	"../include/Stubs.h"
+
+1722902610 /home/barbosa/unb/TP1-SS/Trabalho_2/include/Stubs.h
+	"./interfaces_h/servico/ISAutenticacao.h"
+	<stdexcept>
+	<iostream>
+	<typeinfo>
+
+1722904931 /home/barbosa/unb/TP1-SS/Trabalho_2/include/interfaces_h/servico/ISAutenticacao.h
+	<iostream>
+	"../../dominios_h/Cpf.h"
+	"../../dominios_h/Senha.h"
+
