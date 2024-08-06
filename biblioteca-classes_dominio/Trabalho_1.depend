@@ -256,20 +256,10 @@
 1714959353 /home/barbosa/unb/TP1-SS/Trabalho_1/include/testes_h/entidades/TUPagamento.h
 	"../../entidades_h/Pagamento.h"
 
-1722714415 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\main.cpp
-	"./include/testes_h/dominios/TUCodigoPagamento.h"
-	"./include/testes_h/dominios/TUSetor.h"
-	"./include/testes_h/dominios/TUEstado.h"
-	"./include/testes_h/dominios/TUNome.h"
-	"./include/testes_h/dominios/TUPercentual.h"
-	"./include/testes_h/dominios/TUDinheiro.h"
-	"./include/testes_h/dominios/TUCodigoTitulo.h"
-	"./include/testes_h/dominios/TUCpf.h"
-	"./include/testes_h/dominios/TUSenha.h"
-	"./include/testes_h/dominios/TUData.h"
-	"./include/testes_h/entidades/TUConta.h"
-	"./include/testes_h/entidades/TUTitulo.h"
-	"./include/testes_h/entidades/TUPagamento.h"
+1722902707 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\main.cpp
+	"./include/testes_h/controladoras/TUCtrlAprPagamentos.h"
+	"./include/testes_h/controladoras/TUCtrlSerPagamentos.h"
+	"./include/testes_h/persistencia/TUPagamentoOAD.h"
 
 1722555845 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\dominios\tucodigopagamento.h
 	"../../dominios_h/CodigoPagamento.h"
@@ -465,28 +455,30 @@
 	<stdexcept>
 	<iostream>
 
-1722816910 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\controladoras_cpp\servicos\ctrlserpgtos.cpp
+1722901783 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\controladoras_cpp\servicos\ctrlserpgtos.cpp
 	"../../../include/controladoras_h/Servicos/CtrlSerPgtos.h"
+	<stdexcept>
 
-1722816823 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\controladoras_h\servicos\ctrlserpgtos.h
+1722903717 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\controladoras_h\servicos\ctrlserpgtos.h
 	"../../interfaces_h/InterfacesServicos.h"
 	"../../persistencia_h/PagamentosOAD.h"
+	<vector>
 
-1722714957 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\controladoras_cpp\apresentacao\ctrlaprpgtos.cpp
+1722901741 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\controladoras_cpp\apresentacao\ctrlaprpgtos.cpp
 	"../../../include/controladoras_h/Apresentacao/CtrlAprPgtos.h"
 
-1722715010 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\controladoras_h\apresentacao\ctrlaprpgtos.h
+1722904051 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\controladoras_h\apresentacao\ctrlaprpgtos.h
 	"../../interfaces_h/InterfacesApresentacao.h"
 	"../../interfaces_h/InterfacesServicos.h"
 
-1722813196 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\persistencia_cpp\conexaobanco.cpp
+1722901818 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\persistencia_cpp\conexaobanco.cpp
 	"../../include/persistencia_h/Conexaobanco.h"
 	"../../include/sqlite/sqlite3.h"
 	<stdexcept>
 	<iostream>
 	<vector>
 
-1722811857 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\persistencia_h\conexaobanco.h
+1722901437 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\persistencia_h\conexaobanco.h
 	"../sqlite/sqlite3.h"
 	<string>
 	<vector>
@@ -494,13 +486,48 @@
 1722811886 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\sqlite\sqlite3.h
 	<stdarg.h>
 
-1722814213 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\persistencia_h\pagamentosoad.h
+1722903469 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\persistencia_h\pagamentosoad.h
 	<vector>
 	<string>
 	"Conexaobanco.h"
 	"../entidades_h/Pagamento.h"
 
-1722815477 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\persistencia_cpp\pagamentosoad.cpp
+1722901842 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\persistencia_cpp\pagamentosoad.cpp
 	"../../include/persistencia_h/PagamentosOAD.h"
 	<stdexcept>
+
+1722901882 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\testes_cpp\controladoras\tuctraprpagamentos.cpp
+	"../../../include/testes_h/controladoras/TUCtrlAprPagamentos.h"
+	<iostream>
+	<cassert>
+
+1722902452 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\controladoras\tuctrlaprpagamentos.h
+	"../../controladoras_h/Apresentacao/CtrlAprPgtos.h"
+	"../../controladoras_h/Servicos/CtrlSerPgtos.h"
+	"../../entidades_h/Pagamento.h"
+	"../../dominios_h/CodigoPagamento.h"
+	"../../dominios_h/Data.h"
+	"../../dominios_h/Percentual.h"
+	"../../dominios_h/Estado.h"
+
+1722901909 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\testes_cpp\controladoras\tuctrlserpagamentos.cpp
+	"../../../include/testes_h/controladoras/TUCtrlSerPagamentos.h"
+	<iostream>
+	<cassert>
+
+1722901609 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\controladoras\tuctrlserpagamentos.h
+	"../../controladoras_h/Servicos/CtrlSerPgtos.h"
+	"../../entidades_h/Pagamento.h"
+	"../../dominios_h/CodigoPagamento.h"
+	"../../dominios_h/Data.h"
+	"../../dominios_h/Percentual.h"
+	"../../dominios_h/Estado.h"
+
+1722901933 source:c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\src\testes_cpp\persistencia\tupagamentooad.cpp
+	"../../../include/testes_h/persistencia/TUPagamentoOAD.h"
+	<iostream>
+	<cassert>
+
+1722901647 c:\users\laissa.silva\onedrive - vert\documentos\tp 1 - projeto 1\biblioteca-classes_dominio\include\testes_h\persistencia\tupagamentooad.h
+	"../../persistencia_h/PagamentosOAD.h"
 

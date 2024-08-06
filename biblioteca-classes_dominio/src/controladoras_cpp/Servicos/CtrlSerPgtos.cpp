@@ -1,10 +1,10 @@
 #include "../../../include/controladoras_h/Servicos/CtrlSerPgtos.h"
+#include <stdexcept>
 
 CtrlSerPagamentos::CtrlSerPagamentos(PagamentoOAD* oad) : oad(oad) {}
 
 CtrlSerPagamentos::~CtrlSerPagamentos() {
-    // Se for necessário, limpe os recursos
-    delete oad; // Certifique-se de que oad foi alocado dinamicamente, caso contrário, não delete
+    delete oad;
 }
 
 bool CtrlSerPagamentos::criar(const Pagamento& pagamento) {
@@ -25,6 +25,14 @@ bool CtrlSerPagamentos::ler(Pagamento* pagamento) {
     }
 }
 
+std::vector<Pagamento> CtrlSerPagamentos::lerPagamentos() {
+    try {
+        return oad->listarPagamentos(); // Correção aqui
+    } catch (const std::exception& e) {
+        throw std::runtime_error("Erro ao listar pagamentos: " + std::string(e.what()));
+    }
+}
+
 bool CtrlSerPagamentos::atualizar(const Pagamento& pagamento) {
     try {
         oad->atualizarPagamento(pagamento);
@@ -42,6 +50,3 @@ bool CtrlSerPagamentos::excluir(const CodigoPagamento& codigoPagamento) {
         return false;
     }
 }
-
-
-

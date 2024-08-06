@@ -29,15 +29,14 @@ void TUPagamentoOAD::testarCriarPagamento() {
 
 void TUPagamentoOAD::testarLerPagamento() {
     try {
-        Pagamento pagamento = pagamentoOAD->lerPagamento("1234567");
+        Pagamento pagamento = pagamentoOAD->lerPagamento("12345678");
         assert(pagamento.getCodigoPagamento().getCodigo() == "12345678");
-        assert(pagamento.setData(Data("20-05-2020");
-        assert(pagamento.setPercentual(Percentual(40);
-        assert(pagamento.setEstado(Estado("Previsto");
-        std::cout << "Teste obterTitulo: SUCESSO" << std::endl;
-        }
-        catch (const std::exception& e) {
-        std::cerr << "Teste lerPagamentp: FALHA - " << e.what() << std::endl;
+        assert(pagamento.getData().getData() == "20-05-2020");
+        assert(pagamento.getPercentual().getPercentual() == 40);
+        assert(pagamento.getEstado().getEstado() == "Previsto");
+        std::cout << "Teste lerPagamento: SUCESSO" << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Teste lerPagamento: FALHA - " << e.what() << std::endl;
         status = FALHA;
     }
 }
@@ -49,7 +48,7 @@ void TUPagamentoOAD::testarAtualizarPagamento() {
         pagamentoOAD->atualizarPagamento(pagamento);
 
         Pagamento pagamentoAtualizado = pagamentoOAD->lerPagamento("12345678");
-        assert(tituloAtualizado.getData().getData() == "09-02-2021");
+        assert(pagamentoAtualizado.getData().getData() == "09-02-2021");
         std::cout << "Teste atualizarPagamento: SUCESSO" << std::endl;
     } catch (const std::exception& e) {
         std::cerr << "Teste atualizarPagamento: FALHA - " << e.what() << std::endl;

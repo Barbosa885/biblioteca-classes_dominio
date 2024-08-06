@@ -1,25 +1,35 @@
-#ifndef TU_CTRLSER_TITULO_H
-#define TU_CTRLSER_TITULO_H
+#ifndef TUCTRLSERPAGAMENTOS_H_INCLUDED
+#define TUCTRLSERPAGAMENTOS_H_INCLUDED
 
 #include "../../controladoras_h/Servicos/CtrlSerPgtos.h"
+#include "../../entidades_h/Pagamento.h"
+#include "../../dominios_h/CodigoPagamento.h"
+#include "../../dominios_h/Data.h"
+#include "../../dominios_h/Percentual.h"
+#include "../../dominios_h/Estado.h"
 
-class TUCtrlSerPagamento {
+class TUCtrlSerPagamentos {
 private:
-    CtrlSerPagamentos* crtlSerPagamento;
-    int status;
+    CtrlSerPagamentos* servicoPagamentos;
+    int estado;
+
+    // Constantes para os testes
+    static const std::string CODIGO_VALIDO;
+    static const std::string DATA_VALIDA;
+    static const float PERCENTUAL_VALIDO;
+    static const std::string ESTADO_VALIDO;
+
+public:
+    static const int SUCESSO = 0;
+    static const int FALHA = 1;
 
     void setUp();
     void tearDown();
-
     void testarCriarPagamento();
     void testarLerPagamento();
     void testarAtualizarPagamento();
     void testarExcluirPagamento();
-
-public:
-    const static int SUCESSO = 0;
-    const static int FALHA = -1;
     int run();
 };
 
-#endif // TU_CTRLSER_TITULO_H
+#endif // TUCTRLSERPAGAMENTOS_H_INCLUDED

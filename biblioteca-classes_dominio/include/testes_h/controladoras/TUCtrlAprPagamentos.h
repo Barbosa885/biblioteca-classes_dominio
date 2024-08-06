@@ -1,32 +1,34 @@
-#ifndef TU_CTRLAPR_PAGAMENTO_H
-#define TU_CTRLAPR_PAGAMENTO_H
+#ifndef TUCTRL_APR_PAGAMENTOS_H_INCLUDED
+#define TUCTRL_APR_PAGAMENTOS_H_INCLUDED
+
 #include "../../controladoras_h/Apresentacao/CtrlAprPgtos.h"
 #include "../../controladoras_h/Servicos/CtrlSerPgtos.h"
+#include "../../entidades_h/Pagamento.h"
+#include "../../dominios_h/CodigoPagamento.h"
+#include "../../dominios_h/Data.h"
+#include "../../dominios_h/Percentual.h"
+#include "../../dominios_h/Estado.h"
 
 class TUCtrlAprPagamento {
 private:
-    CtrlAprPagamentos* ctrlAprPagamento;
-    CtrlSerPagamentos* ctrlSerPagamento;
-    int status;
+    CtrlSerPagamentos* servicoPagamentos;
+    int estado;
 
-    void setUp();
-    void tearDown();
-
-    void testarCriarPagamento();
-    void testarLerPagamento();
-    void testarAtualizarPagamento();
-    void testarExcluirPagamento();
-
-public:
-    const static int SUCESSO = 0;
-    const static int FALHA = -1;
-
-    // Membros estáticos devem ser declarados no header
     static const std::string CODIGO_VALIDO;
     static const std::string DATA_VALIDA;
     static const float PERCENTUAL_VALIDO;
     static const std::string ESTADO_VALIDO;
 
+public:
+    static const int SUCESSO = 0;
+    static const int FALHA = 1;
+
+    void setUp();
+    void tearDown();
+    void testarCriarPagamento();
+    void testarLerPagamento();
+    void testarAtualizarPagamento();
+    void testarExcluirPagamento();
     int run();
 };
 

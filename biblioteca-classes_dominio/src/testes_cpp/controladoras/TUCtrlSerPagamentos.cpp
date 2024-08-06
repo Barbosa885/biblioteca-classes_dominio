@@ -1,49 +1,106 @@
+#include "../../../include/testes_h/controladoras/TUCtrlSerPagamentos.h"
+#include <iostream>
+#include <cassert>
 
-#include "../../../include/controladoras_h/Servicos/CtrlSerPgtos.h"
-#include <stdexcept>
+// Inicialização das constantes estáticas
+const std::string TUCtrlSerPagamentos::CODIGO_VALIDO = "ABC123";
+const std::string TUCtrlSerPagamentos::DATA_VALIDA = "01-01-2023";
+const float TUCtrlSerPagamentos::PERCENTUAL_VALIDO = 0.1f;
+const std::string TUCtrlSerPagamentos::ESTADO_VALIDO = "Pago";
 
-// Construtor da classe CtrlSerPagamentos, inicializa o objeto de acesso a dados (OAD)
-CtrlSerPagamentos::CtrlSerPagamentos(PagamentoOAD* oad) : oad(oad) {}
-
-// Destrutor da classe CtrlSerPagamentos
-CtrlSerPagamentos::~CtrlSerPagamentos() {
-    delete oad; // Libera memória alocada para o OAD, caso tenha sido alocado dinamicamente
+void TUCtrlSerPagamentos::setUp() {
+    std::string caminhoBanco = "../../banco_de_dados.db";
+    PagamentoOAD* pagamentoOAD = new PagamentoOAD(caminhoBanco);
+    servicoPagamentos = new CtrlSerPagamentos(pagamentoOAD);
+    estado = SUCESSO;
 }
 
-// Implementação do método para criar um novo pagamento
-void CtrlSerPagamentos::criar(const Pagamento& pagamento) {
-    try {
-        oad->criarPagamento(pagamento); // Chama o método de criação de pagamento no OAD
-    } catch (const std::invalid_argument& e) {
-        throw std::runtime_error("Erro ao criar pagamento: " + std::string(e.what()));
-    }
+void TUCtrlSerPagamentos::tearDown() {
+    delete servicoPagamentos;
 }
 
-
-// Implementação do método para listar todos os pagamentos
-std::vector<Pagamento> CtrlSerPagamentos::lerPagamento() {
+void TUCtrlSerPagamentos::testarCriarPagamento() {
     try {
-        return oad->lerPagamento(); // Chama o método de listagem de pagamentos no OAD
+        Pagamento pagamento;
+        pagamento.setCodigoPagamento(CodigoPagamento(CODIGO_VALIDO));
+        pagamento.setData(Data(DATA_VALIDA));
+        pagamento.setPercentual(Percentual(PERCENTUAL_VALIDO));
+        pagamento.setEstado(Estado(ESTADO_VALIDO));
+
+        bool resultado = servicoPagamentos->criar(pagamento);
+        assert(resultado == true);
+        std::cout << "Teste criarPagamento: SUCESSO" << std::endl;
     } catch (const std::exception& e) {
-        throw std::runtime_error("Erro ao listar pagamentos: " + std::string(e.what()));
+        std::cerr << "Teste criarPagamento: FALHA - " << e.what() << std::endl;
+        estado = FALHA;
     }
 }
 
-// Implementação do método para atualizar um pagamento existente
-void CtrlSerPagamentos::atualizar(const Pagamento& pagamento) {
+void TUCtrlSerPagamentos::testarLerPagamento() {
     try {
-        oad->atualizarPagamento(pagamento); // Chama o método de atualização de pagamento no OAD
-    } catch (const std::invalid_argument& e) {
-        throw std::runtime_error("Erro ao atualizar pagamento: " + std::string(e.what()));
-    }
-}
+        Pagamento pagamento;
+        pagamento.setCodigoPagamento(CodigoPagamento(CODIGO_VALIDO));
 
-// Implementação do método para excluir um pagamento pelo código
-void CtrlSerPagamentos::excluir(const CodigoPagamento& codigo) {
-    try {
-        oad->excluirPagamento(codigo.getCodigoPagamento());
+        bool resultado = servicoPagamentos->ler(&pagamento);
+        assert(resultado == true);
+        assert(pagamento.getCodigoPagamento().getCodigo() == CODIGO_VALIDO);
+        assert(pagamento.getData().getData() == DATA_VALIDA);
+        assert(pagamento.getPercentual().getPercentual() == PERCENTUAL_VALIDO);
+        assert(pagamento.getEstado().getEstado() == ESTADO_VALIDO);
+        std::cout << "Teste lerPagamento: SUCESSO" << std::endl;
     } catch (const std::exception& e) {
-        throw std::runtime_error("Erro ao excluir pagamento: " + std::string(e.what()));
+        std::cerr << "Teste lerPagamento: FALHA - " << e.what() << std::endl;
+        estado = FALHA;
     }
 }
 
+void TUCtrlSerPagamentos::testarAtualizarPagamento() {
+    try {
+        Pagamento pagamento;
+        pagamento.setCodigoPagamento(CodigoPagamento(CODIGO_VALIDO));
+        servicoPagamentos->ler(&pagamento);
+        pagamento.setPercentual(Percentual(0.15f));
+
+        bool resultado = servicoPagamentos->atualizar(pagamento);
+        assert(resultado == true);
+
+        Pagamento pagamentoAtualizado;
+        pagamentoAtualizado.setCodigoPagamento(CodigoPagamento(CODIGO_VALIDO));
+        servicoPagamentos->ler(&pagamentoAtualizado);
+        assert(pagamentoAtualizado.getPercentual().getPercentual() == 0.15f);
+        std::cout << "Teste atualizarPagamento: SUCESSO" << std::endl;
+    } catch (const std::exception& e) {
+        std::cerr << "Teste atualizarPagamento: FALHA - " << e.what() << std::endl;
+        estado = FALHA;
+    }
+}
+
+void TUCtrlSerPagamentos::testarExcluirPagamento() {
+    try {
+        bool resultado = servicoPagamentos->excluir(CodigoPagamento(CODIGO_VALIDO));
+        assert(resultado == true);
+
+        Pagamento pagamento;
+        pagamento.setCodigoPagamento(CodigoPagamento(CODIGO_VALIDO));
+        bool leituraResultado = servicoPagamentos->ler(&pagamento);
+        if (leituraResultado) {
+            std::cerr << "Teste excluirPagamento: FALHA - Pagamento ainda existe" << std::endl;
+            estado = FALHA;
+        } else {
+            std::cout << "Teste excluirPagamento: SUCESSO" << std::endl;
+        }
+    } catch (const std::exception& e) {
+        std::cerr << "Teste excluirPagamento: FALHA - " << e.what() << std::endl;
+        estado = FALHA;
+    }
+}
+
+int TUCtrlSerPagamentos::run() {
+    setUp();
+    testarCriarPagamento();
+    testarLerPagamento();
+    testarAtualizarPagamento();
+    testarExcluirPagamento();
+    tearDown();
+    return estado;
+}
